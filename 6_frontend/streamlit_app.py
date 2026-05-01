@@ -11,7 +11,7 @@ st.set_page_config(page_title="Thesis Dashboard", layout="wide")
 
 st.title("Thesis Dashboard")
 st.text("Can Machine Learning Variable Selection and Individual Commodity Fundamentals Improve Futures Return Forecasting?")
-st.link_button("🔗 Github repository", "https://github.com/leospecks")
+st.link_button("🔗 Github repository", "https://github.com/leospecks/Thesis-Project")
 
 st.header("Current Draft")
 
