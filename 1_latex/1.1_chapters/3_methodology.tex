@@ -1,0 +1,60 @@
+% !TeX root = ../main.tex
+
+\section{Methodology}
+\subsection{Baseline Framework (Replication)}
+
+We begin by gathering all $T$ observations of $n$ variables into a data matrix $\mathbf X \in \mathbb R ^{T\times n}$, where each row is a \textit{month} and each column is a macroeconomic variable. Each column is demeaned and standardized to unit variance using the StandardScaler: 
+\begin{equation}
+    X_{\text{scaled},ij}=\frac{X_{\text{raw},ij}-\mu_j}{\sigma_j}.
+\end{equation}
+Let $\mathbf \Sigma=V[\mathbf X]\in \mathbb R^{n\times n}$ denote the variance-covariance matrix of $\mathbf X$, which is calculated as: 
+\begin{equation}
+    \mathbf \Sigma=\frac{1}{T-1} \mathbf X^{\prime} \mathbf X,
+\end{equation}
+and let $\mathbf \Sigma =\mathbf {U \Lambda U}^\prime$ be its spectral decomposition, where $\mathbf U \in \mathbb R^{n\times n}$ is an orthogonal matrix of order $m$, whose columns are the eigenvectors $\mathbf u_1, \mathbf u_2,...,\mathbf u_n$ of $\mathbf \Sigma$, and $\mathbf \Lambda \in \mathbb R^{n\times n}$ is a diagonal matrix of the same order, whose diagonal entries are the corresponding eigenvalues $\lambda_1\ge\lambda_2\ge...\ge \lambda_n$, which, by convention, are sorted from the largest to the smallest. By multiplying the original scaled data matrix $\mathbf X$ with $\mathbf U$, we derive the principal components of $\mathbf X$ as the elements of the matrix $\mathbf F\in R^{T \times n}$, or formally: 
+\begin{equation}
+    \mathbf F = \mathbf X \mathbf U.
+\end{equation}
+To assess how much of the total variance in the original $n$ variables is captured by the $k$-th principal component, or alternatively by the first $K$ principal components, we can compute the variance-covariance matrix of $\mathbf F$ as:
+\begin{equation}
+    \begin{aligned}
+        \operatorname{V}[\mathbf F] &= \operatorname{V}[\mathbf {XU}]\\
+        &= \mathbf{U^\prime \Sigma U}\\
+        &= \mathbf{U^\prime U \Lambda U^\prime U}\\
+        &= \mathbf{I}_m\mathbf{\Lambda I}_m\\ 
+        &= \mathbf{\Lambda}, 
+    \end{aligned}
+\end{equation} 
+where we exploited the orthogonality of $\mathbf U$. Recalling the fact that $\mathbf \Lambda$ is a diagonal matrix, $\operatorname{V}[\mathbf F]=\mathbf \Lambda$ implies that the principal components are mutually uncorrelated, and have a variance equal to the associated eigenvalue. Therefore, the proportion of variance in the original $n$ variables explained by the $k$-th principal component is given by:
+\begin{equation}
+    \frac{\lambda_k}{\sum_{i=1}^n\lambda_i},
+\end{equation}
+and the cumulative proportion of explained  variance by the first $K$ components by:
+\begin{equation}
+    \frac{\sum_{k=1}^K\lambda_k}{\sum_{i=1}^n\lambda_i}.
+\end{equation}
+
+Mirroring the approach used by \cite{guidolin_forecasting_2021}, we forecast the returns of each commodity $j$, $R_{t+1,j}$, with the principal component analysis to summarize a large set of macroeconmic factors:
+
+\begin{equation}
+    R_{t+1, j}
+    = \underbrace{\alpha_j}_{\text{intercept}}
+    + \underbrace{\sum_{i=1}^N \beta_{i j} P C_{t, i j}}_{\text{macroeconmic}}
+    + \underbrace{D_{t, j}\left(\sum_{k=1}^K \gamma_{k j} C_{t, k j}\right)}_{\text{commodity-specific}}
+    + \underbrace{\varepsilon_{t, j},}_{\text{error term}}
+\end{equation}
+where $\alpha_j$ is the model's intercept, 
+
+\subsection{Extension I: Penalized Regression}
+In the first alternate approach, we keep the principal component analysis and still extract ten principal components from the $n$ inital variables, but instead of running stepwise AIC on those selected principal components, we run a LASSO regression as an alternative way to further reduce the number of parameters to be estimated. With this only being a narrow replacement compared to the original framework, every difference in results should be attributable soley to the selection method.
+\begin{equation}
+R_{t+1, j}=\alpha_j+\sum_{i=1}^{10} \beta_{i j}^{\mathrm{LASSO}} P C_{t, i j}+\sum_{k=1}^K \gamma_{k j}^{\mathrm{LASSO}} C_{t, k j}+\varepsilon_{t, j}
+\end{equation}
+A broader extension to the approach by \cite{guidolin_forecasting_2021} is foregoing the principal component analysis entirely and applying LASSO directly to the $n$ variables. 
+\begin{equation}
+R_{t+1, j}=\alpha_j+\sum_{i=1}^{128} \beta_{i j}^{\mathrm{LASSO}} X_{t, i}+\sum_{k=1}^K \gamma_{k j}^{\mathrm{LASSO}} C_{t, k j}+\varepsilon_{t, j}
+\end{equation}
+
+\subsection{Extension II: Individual Fundamental Predictors}
+\subsection{OOS Evaluation Criteria}
+\subsection{Portfolio Back-Testing Framework}
