@@ -12,7 +12,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
-\usepackage{tgheros}
+\usepackage[scale=0.92]{tgheros}
 
 % --------------------------------------------------
 % Mathematics 
@@ -41,9 +41,10 @@
 % --------------------------------------------------
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{tabularx}
 \usepackage{float}
 \usepackage{multirow}
-\usepackage[hang,small,labelfont=bf]{caption}
+\usepackage{caption}
 
 % Custom float environments
 \floatstyle{plain}
@@ -52,6 +53,14 @@
 
 \newfloat{mloutput}{htbp}{lom}
 \floatname{mloutput}{Matlab Output}
+
+\captionsetup{
+    labelformat=simple,
+    labelsep=newline,     % puts caption on next line
+    justification=raggedright,
+    singlelinecheck=false,
+    labelfont={bf, sf}
+}
 
 % --------------------------------------------------
 % Lists
