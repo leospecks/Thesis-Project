@@ -75,6 +75,67 @@
       \verb http://link.springer.com/10.1007/s10479-020-03515-w
       \endverb
     \endentry
+    \entry{sStatisticalMachineLearning2024a}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fa01de74eeaff85321eea674ba0a0d0c}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Ajith},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb9fb6645fffbd9d507e71e0ab6b580c}{%
+           family={Debnath},
+           familyi={D\bibinitperiod},
+           given={Manoj\bibnamedelima Kanti},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdbb5b9fdec4623cd6f0dec46887e7b6}{%
+           family={R},
+           familyi={R\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{fullhash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{fullhashraw}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{bibnamehash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{authorbibnamehash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{authornamehash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{authorfullhash}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \strng{authorfullhashraw}{ea43b6a0c0f69a52f687375d79fdeca5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-7128, 1432-1254}
+      \field{journaltitle}{International Journal of Biometeorology}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Int J Biometeorol}
+      \field{title}{Statistical and Machine Learning Models for Location-Specific Crop Yield Prediction Using Weather Indices}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{68}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2453\bibrangedash 2475}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s00484-024-02763-w
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s00484-024-02763-w
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s00484-024-02763-w
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
