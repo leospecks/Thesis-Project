@@ -3,7 +3,7 @@
 % --------------------------------------------------
 % Document class
 % --------------------------------------------------
-\documentclass[12pt]{article}
+\documentclass[12pt, a4paper]{article}
 
 % --------------------------------------------------
 % Language and typography
@@ -47,6 +47,16 @@
 \usepackage{caption}
 
 % Custom float environments
+\floatstyle{plaintop}
+\newfloat{codeblock}{H}{lop}
+\floatname{codeblock}{Code}
+
+\captionsetup[codeblock]{
+  position=top,
+  skip=4pt
+}
+
+
 \floatstyle{plain}
 \newfloat{pyoutput}{htbp}{lop}
 \floatname{pyoutput}{Python Output}

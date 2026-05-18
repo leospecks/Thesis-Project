@@ -1,0 +1,50 @@
+% !TeX root = ../main.tex
+\appendix
+\phantomsection
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+\markboth{Appendix}{Appendix}
+
+
+\begin{table}[h!]
+\caption{Citation Styles with BibLaTeX}
+\footnotesize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+\toprule
+\textbf{Command} & \textbf{Output} \\
+\midrule
+\verb|\cite{}|  & Author, Year  \\
+\verb|\textcite{}|  & Author (Year) \\
+\verb|\parencite{}|  & (Author, Year)  \\
+\verb|\citeauthor{}|  & Author \\
+\verb|\citeyear{}|  & Year \\
+\bottomrule
+\end{tabular*}
+\label{tab:citation styles}
+\end{table}
+
+\begin{figure}[htbp]
+    \caption{Example Figure (width should be 16cm)} % Figure caption
+    \includegraphics[width=\linewidth]{1.5_figures/test_image.pdf} % Figure image
+	\label{heatmap} % Label for referencing with \ref{heatmap}
+\end{figure}
+\vspace{-20pt}
+
+\begin{codeblock}
+\caption{Example Codeblock}
+\vspace{-16pt}
+\begin{minted}[fontsize=\footnotesize]{python}
+# KPI OVERVIEW
+kpis = pd.DataFrame({
+    "Ann. Return (approx)": ann_return_simple,
+    "Ann. Return (compounding)": ann_return,
+    "Ann. Volatility": ann_vol,
+    "Sharpe": sharpe,
+    "CAGR": cagr,
+    "Max Drawdown": max_dd
+})
+
+kpis.T
+\end{minted}
+\end{codeblock}
+
