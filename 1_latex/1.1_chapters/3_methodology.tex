@@ -34,7 +34,7 @@ and the cumulative proportion of explained  variance by the first $K$ components
     \frac{\sum_{k=1}^K\lambda_k}{\sum_{i=1}^n\lambda_i}.
 \end{equation}
 
-Mirroring the approach used by \cite{guidolin_forecasting_2021}, we forecast the returns of each commodity $j$, $R_{t+1,j}$, with the principal component analysis to summarize a large set of macroeconmic factors:
+Mirroring the approach used by \textcite{guidolin_forecasting_2021}, we forecast the returns of each commodity $j$, $R_{t+1,j}$, with the principal component analysis to summarize a large set of macroeconmic factors:
 
 \begin{equation}
     R_{t+1, j}
@@ -50,7 +50,7 @@ In the first alternate approach, we keep the principal component analysis and st
 \begin{equation}
 R_{t+1, j}=\alpha_j+\sum_{i=1}^{10} \beta_{i j}^{\mathrm{LASSO}} P C_{t, i j}+\sum_{k=1}^K \gamma_{k j}^{\mathrm{LASSO}} C_{t, k j}+\varepsilon_{t, j}
 \end{equation}
-A broader extension to the approach by \cite{guidolin_forecasting_2021} is foregoing the principal component analysis entirely and applying LASSO directly to the $n$ variables. 
+A broader extension to the approach by \textcite{guidolin_forecasting_2021} is foregoing the principal component analysis entirely and applying LASSO directly to the $n$ variables. 
 \begin{equation}
 R_{t+1, j}=\alpha_j+\sum_{i=1}^{128} \beta_{i j}^{\mathrm{LASSO}} X_{t, i}+\sum_{k=1}^K \gamma_{k j}^{\mathrm{LASSO}} C_{t, k j}+\varepsilon_{t, j}
 \end{equation}

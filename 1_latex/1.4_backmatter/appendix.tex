@@ -9,15 +9,15 @@
 \begin{table}[h!]
 \caption{Citation Styles with BibLaTeX}
 \footnotesize
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr}
 \toprule
-\textbf{Command} & \textbf{Output} \\
+\textbf{Command} & \textbf{authoryear} & \textbf{numeric} \\
 \midrule
-\verb|\cite{}|  & Author, Year  \\
-\verb|\textcite{}|  & Author (Year) \\
-\verb|\parencite{}|  & (Author, Year)  \\
-\verb|\citeauthor{}|  & Author \\
-\verb|\citeyear{}|  & Year \\
+\verb|\cite{}|  & Author, Year & [number] \\
+\verb|\textcite{}|  & Author (Year) & Author [number] \\
+\verb|\parencite{}|  & (Author, Year)  & [number]\\
+\verb|\citeauthor{}|  & Author & Author\\
+\verb|\citeyear{}|  & Year & Year (not linked)\\
 \bottomrule
 \end{tabular*}
 \label{tab:citation styles}
