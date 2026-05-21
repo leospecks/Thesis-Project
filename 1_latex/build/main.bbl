@@ -19,29 +19,51 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{ChatGPTa}{online}{}{}
-      \list{organization}{1}{%
-        {ChatGPT}%
+    \entry{auerHaveTrendfollowingSignals2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=263bdf8c038a048ee008ca0d31165c95}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Benjamin\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{fullhash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{fullhashraw}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{bibnamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorbibnamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{ChatGPT hilft dir, Antworten zu finden, Inspiration zu schöpfen und produktiver zu arbeiten.}
-      \field{langid}{german}
-      \field{title}{ChatGPT}
+      \field{issn}{1934-4554, 2373-8529}
+      \field{journaltitle}{Financial Markets and Portfolio Management}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shortjournal}{Financ Mark Portf Manag}
+      \field{title}{Have Trend-Following Signals in Commodity Futures Markets Become Less Reliable in Recent Years?}
       \field{urlday}{21}
       \field{urlmonth}{5}
       \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2021}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \true{nocite}
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\RUA82KHT\de-DE.html
+      \field{pages}{533\bibrangedash 553}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s11408-021-00385-5
       \endverb
       \verb{urlraw}
-      \verb https://chatgpt.com/de-DE/
+      \verb https://link.springer.com/10.1007/s11408-021-00385-5
       \endverb
       \verb{url}
-      \verb https://chatgpt.com/de-DE/
+      \verb https://link.springer.com/10.1007/s11408-021-00385-5
       \endverb
     \endentry
     \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
