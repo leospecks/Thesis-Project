@@ -178,8 +178,41 @@
 % --------------------------------------------------
 % Bibliography
 % --------------------------------------------------
-\usepackage[backend=biber,style=numeric,natbib=true]{biblatex}
+\usepackage[
+  backend=biber,
+  style=numeric,
+  natbib=true,
+  defernumbers=true
+]{biblatex}
+
 \addbibresource{1.4_backmatter/references.bib}
+
+\DeclareBibliographyCategory{cited}
+
+% Guard so \nocite{*} does not mark everything as cited
+\newif\ifinnocite
+\let\oldnocite\nocite
+\renewcommand*{\nocite}[1]{%
+  \begingroup
+  \innocitetrue
+  \oldnocite{#1}%
+  \endgroup
+}
+
+% Mark only genuinely cited items
+\AtEveryCitekey{%
+  \ifinnocite
+  \else
+    \addtocategory{cited}{\thefield{entrykey}}%
+  \fi
+}
+
+% Color uncited entries
+\AtEveryBibitem{%
+  \ifcategory{cited}
+    {}
+    {\color{gray}}%
+}
 
 % --------------------------------------------------
 % Appendix

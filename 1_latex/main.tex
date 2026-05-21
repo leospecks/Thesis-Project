@@ -39,7 +39,21 @@
 
 % REFERENCES
 \phantomsection
-\printbibliography
+\section*{References}
+\nocite{*}
+
+\printbibliography[
+  category=cited,
+  heading=none
+]
+
+\printbibliography[
+  notcategory=cited,
+  heading=none
+]
+
+\noindent {\color{gray} *not cited yet}
+
 \markboth{References}{References}
 \addcontentsline{toc}{section}{References}
 \newpage

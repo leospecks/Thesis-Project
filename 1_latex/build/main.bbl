@@ -19,6 +19,93 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{ChatGPTa}{online}{}{}
+      \list{organization}{1}{%
+        {ChatGPT}%
+      }
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ChatGPT hilft dir, Antworten zu finden, Inspiration zu schöpfen und produktiver zu arbeiten.}
+      \field{langid}{german}
+      \field{title}{ChatGPT}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\RUA82KHT\de-DE.html
+      \endverb
+      \verb{urlraw}
+      \verb https://chatgpt.com/de-DE/
+      \endverb
+      \verb{url}
+      \verb https://chatgpt.com/de-DE/
+      \endverb
+    \endentry
+    \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0078ab5541f1b18e45041916d385d467}{%
+           family={Giampietro},
+           familyi={G\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
+           family={Guidolin},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
+           family={Pedio},
+           familyi={P\bibinitperiod},
+           given={Manuela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{fullhash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{fullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{bibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorbibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authornamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
+      \field{day}{1}
+      \field{issn}{0377-2217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{European Journal of Operational Research}
+      \field{shorttitle}{Estimating Stochastic Discount Factor Models with Hidden Regimes}
+      \field{title}{Estimating Stochastic Discount Factor Models with Hidden Regimes: {{Applications}} to Commodity Pricing}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{265}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{685\bibrangedash 702}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2017.07.045
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Leo\\Zotero\\storage\\MP3QELU9\\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf;C\:\\Users\\Leo\\Zotero\\storage\\HGNW22NP\\S0377221717306720.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \endverb
+      \keyw{Commodities,Finance,Hidden Markov model,Stochastic discount factor}
+    \endentry
     \entry{guidolin_forecasting_2021}{article}{}{}
       \name{author}{2}{}{%
         {{hash=99abfa3b83457e521eb56c2375131054}{%
