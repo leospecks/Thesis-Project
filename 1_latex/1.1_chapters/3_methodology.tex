@@ -3,7 +3,7 @@
 \section{Methodology}
 \subsection{Baseline Framework (Replication)}
 
-We begin by gathering all $T$ observations of $n$ variables into a data matrix $\mathbf X \in \mathbb R ^{T\times n}$, where each row is a \textit{month} and each column is a macroeconomic variable. Each column is demeaned and standardized to unit variance using the StandardScaler: 
+We begin by gathering all $T$ observations of $n$ variables into a data matrix $\mathbf X \in \mathbb R ^{T\times n}$, where \marker{each row is a month} and each column is a macroeconomic variable. Each column is demeaned and standardized to unit variance using the StandardScaler: 
 \begin{equation}
     X_{\text{scaled},ij}=\frac{X_{\text{raw},ij}-\mu_j}{\sigma_j}.
 \end{equation}

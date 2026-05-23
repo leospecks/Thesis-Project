@@ -35,6 +35,7 @@
       \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -65,6 +66,60 @@
       \verb{url}
       \verb https://link.springer.com/10.1007/s11408-021-00385-5
       \endverb
+    \endentry
+    \entry{auerHaveTrendfollowingSignals2021a}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=263bdf8c038a048ee008ca0d31165c95}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Benjamin\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{fullhash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{fullhashraw}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{bibnamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorbibnamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
+      \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Various trend-following trading rules have been shown to be valuable for predicting market directions and thus the formulation of investment strategies. However, recent equity market research has provided striking evidence that the predictive power of such rules appears to diminish over time due to increased investor attention and lowered arbitrage barriers. Given that trend-following rules are also very successful and have been widely used in futures markets, we analyze whether a similar effect can be observed for commodity futures contracts. Using a trend regression approach based on time-varying success ratios, we detect significantly higher predictive accuracy for cross-sectional than for time-series strategies. In addition, with the exception of a few commodities, we find no significant trending behavior in trading rule reliability. These results, which are robust in a variety of settings, indicate strong momentum stability in futures markets and justify the application of this class of trading rules in commodity futures investing.}
+      \field{day}{1}
+      \field{issn}{2373-8529}
+      \field{journaltitle}{Financial Markets and Portfolio Management}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shortjournal}{Financ Mark Portf Manag}
+      \field{title}{Have Trend-Following Signals in Commodity Futures Markets Become Less Reliable in Recent Years?}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{533\bibrangedash 553}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s11408-021-00385-5
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\6NSC6ITA\Auer - 2021 - Have trend-following signals in commodity futures markets become less reliable in recent years.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11408-021-00385-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11408-021-00385-5
+      \endverb
+      \keyw{C10,Commodity futures,G10,G17,Momentum,Moving averages,Trend-following rules,Trends}
     \endentry
     \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
       \name{author}{3}{}{%

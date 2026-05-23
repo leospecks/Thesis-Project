@@ -1,30 +1,36 @@
 % STRUCTURE AND PACKAGES
 \input{1.2_preamble/structure}
 
-%TITLE SECTION
-\title{\vspace*{5cm}\textsf{\textbf{Can Machine Learning Variable Selection and Individual Commodity Fundamentals Improve Futures Return Forecasting?}}}
+% Only compile one chapter to speed up compile time
+\newif\iffastcompile
+%\fastcompiletrue
+%\includeonly{1.1_chapters/3_methodology}
+
+\title{\vspace*{6cm}\textsf{\textbf{Can Machine Learning Variable Selection and Individual Commodity Fundamentals Improve Futures Return Forecasting?}}}
 \author{Leo Specks \\ Supervisor: Prof. Massimo Guidolin\\ MSc Finance, Università Bocconi}
 \date{July 2027}
 
 \begin{document}
-\maketitle
-\thispagestyle{firstpage}
-\setcounter{page}{0}
 
-% DRAFT (remove before submitting)
-\input{1.3_frontmatter/draft warning}
+\iffastcompile
+\else
+  \maketitle
+  \thispagestyle{firstpage}
+  \setcounter{page}{0}
 
-% ABSTRACT
-%\input{1.3_frontmatter/abstract}
+  % DRAFT
+  \input{1.3_frontmatter/draft warning}
 
-\newpage
+  % ABSTRACT
+  %\input{1.3_frontmatter/abstract}
 
+  \newpage
 
-% TABLE OF CONTENTS
-{
-  \hypersetup{linkcolor=black}
-  \tableofcontents
-}
+  {
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+  }
+\fi
 
 % CHAPTERS
 \include{1.1_chapters/1_introduction}
@@ -37,28 +43,31 @@
 \include{1.1_chapters/8_synthesis & discussion}
 \include{1.1_chapters/9_conclusions}
 
-% REFERENCES
-\phantomsection
-\section*{References}
-\nocite{*}
+\iffastcompile
+\else
+  % REFERENCES
+  \phantomsection
+  \section*{References}
+  \nocite{*}
 
-\printbibliography[
-  category=cited,
-  heading=none
-]
+  \printbibliography[
+    category=cited,
+    heading=none
+  ]
 
-\printbibliography[
-  notcategory=cited,
-  heading=none
-]
+  \printbibliography[
+    notcategory=cited,
+    heading=none
+  ]
 
-\noindent {\color{gray} *not cited yet}
+  \noindent {\color{gray} *not cited yet}
 
-\markboth{References}{References}
-\addcontentsline{toc}{section}{References}
-\newpage
+  \markboth{References}{References}
+  \addcontentsline{toc}{section}{References}
+  \newpage
 
-% APPENDIX
-\include{1.4_backmatter/appendix}
+  % APPENDIX
+  \include{1.4_backmatter/appendix}
+\fi
 
 \end{document}
