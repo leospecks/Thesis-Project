@@ -19,54 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{auerHaveTrendfollowingSignals2021}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=263bdf8c038a048ee008ca0d31165c95}{%
-           family={Auer},
-           familyi={A\bibinitperiod},
-           given={Benjamin\bibnamedelima R.},
-           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{fullhash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{fullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{bibnamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorbibnamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1934-4554, 2373-8529}
-      \field{journaltitle}{Financial Markets and Portfolio Management}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{4}
-      \field{shortjournal}{Financ Mark Portf Manag}
-      \field{title}{Have Trend-Following Signals in Commodity Futures Markets Become Less Reliable in Recent Years?}
-      \field{urlday}{21}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{35}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{533\bibrangedash 553}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1007/s11408-021-00385-5
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/10.1007/s11408-021-00385-5
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/10.1007/s11408-021-00385-5
-      \endverb
-    \endentry
     \entry{auerHaveTrendfollowingSignals2021a}{article}{}{}
       \name{author}{1}{}{%
         {{hash=263bdf8c038a048ee008ca0d31165c95}{%
@@ -83,7 +35,6 @@
       \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -173,7 +124,7 @@
       \verb 10.1016/j.ejor.2017.07.045
       \endverb
       \verb{file}
-      \verb C\:\\Users\\Leo\\Zotero\\storage\\MP3QELU9\\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf;C\:\\Users\\Leo\\Zotero\\storage\\HGNW22NP\\S0377221717306720.html
+      \verb C:\Users\Leo\Zotero\storage\MP3QELU9\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
