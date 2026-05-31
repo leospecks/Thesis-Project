@@ -134,6 +134,63 @@
       \endverb
       \keyw{Commodities,Finance,Hidden Markov model,Stochastic discount factor}
     \endentry
+    \entry{guidolinPredictingCommodityReturns2026}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
+           family={Guidolin},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab03470d6a1ea52d181252f0978e9d3d}{%
+           family={Ionta},
+           familyi={I\bibinitperiod},
+           given={Serena},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{fullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{fullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{bibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorbibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authornamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorfullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorfullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We test whether large-scale climate indicators contribute to the predictability of commodity futures returns and generate economic value for investors. Using monthly data on fourteen commodities, we conduct a pseudo out-of-sample forecasting exercise based on a range of models that include automatic variable selection and nonlinear regime-switching specifications. Climate-related predictors rarely outperform standard benchmarks in terms of statistical forecast accuracy. Yet, when embedded in a portfolio choice problem, they deliver economically meaningful gains. These results illustrate a disconnect between statistical predictability and economic relevance.}
+      \field{day}{1}
+      \field{issn}{0165-1765}
+      \field{journaltitle}{Economics Letters}
+      \field{month}{6}
+      \field{shortjournal}{Economics Letters}
+      \field{shorttitle}{Predicting Commodity Returns with Climate Variables}
+      \field{title}{Predicting Commodity Returns with Climate Variables: {{Statistical}} Loss Functions vs. Economic Value}
+      \field{urlday}{29}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{265}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{113028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.econlet.2026.113028
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\THZHN25Q\Guidolin and Ionta - 2026 - Predicting commodity returns with climate variables Statistical loss functions vs. economic value.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \endverb
+      \keyw{Certainty equivalent returns,Climate risk,Commodity futures,Hidden Markov models,Loss functions}
+    \endentry
     \entry{guidolin_forecasting_2021}{article}{}{}
       \name{author}{2}{}{%
         {{hash=99abfa3b83457e521eb56c2375131054}{%
