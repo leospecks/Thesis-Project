@@ -35,6 +35,9 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{svg}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{subcaption}
 
 % --------------------------------------------------
 % Tables, captions, and floats
@@ -70,6 +73,11 @@
     justification=raggedright,
     singlelinecheck=false,
     labelfont={bf, sf}
+}
+
+\captionsetup[subfigure]{
+    justification=centering,
+    singlelinecheck=false
 }
 
 % --------------------------------------------------
@@ -180,7 +188,7 @@
 % --------------------------------------------------
 \usepackage[
   backend=biber,
-  style=numeric,
+  style=apa,
   natbib=true,
   defernumbers=true, 
   url=false

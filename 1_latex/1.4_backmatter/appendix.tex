@@ -6,45 +6,4 @@
 \markboth{Appendix}{Appendix}
 
 
-\begin{table}[h!]
-\caption{Citation Styles with BibLaTeX}
-\footnotesize
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr}
-\toprule
-\textbf{Command} & \textbf{authoryear} & \textbf{numeric} \\
-\midrule
-\verb|\cite{}|  & Author, Year & [number] \\
-\verb|\textcite{}|  & Author (Year) & Author [number] \\
-\verb|\parencite{}|  & (Author, Year)  & [number]\\
-\verb|\citeauthor{}|  & Author & Author\\
-\verb|\citeyear{}|  & Year & Year (not linked)\\
-\bottomrule
-\end{tabular*}
-\label{tab:citation styles}
-\end{table}
-
-\begin{figure}[htbp]
-    \caption{Example Figure (width should be 16cm)} % Figure caption
-    \includegraphics[width=\linewidth]{1.5_figures/framework_diagram.pdf} % Figure image
-	\label{heatmap} % Label for referencing with \ref{heatmap}
-\end{figure}
-\vspace{-20pt}
-
-\begin{codeblock}
-\caption{Example Codeblock}
-\vspace{-16pt}
-\begin{minted}[fontsize=\footnotesize]{python}
-# KPI OVERVIEW
-kpis = pd.DataFrame({
-    "Ann. Return (approx)": ann_return_simple,
-    "Ann. Return (compounding)": ann_return,
-    "Ann. Volatility": ann_vol,
-    "Sharpe": sharpe,
-    "CAGR": cagr,
-    "Max Drawdown": max_dd
-})
-
-kpis.T
-\end{minted}
-\end{codeblock}
 
