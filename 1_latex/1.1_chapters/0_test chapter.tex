@@ -10,12 +10,16 @@ Aenean vehicula neque quis felis lacinia, ut pharetra felis vestibulum. Maecenas
 \begin{figure}[htbp]
     \caption{Example figure with two subfigures.}
     \centering
-    \setkeys{Gin}{width=7.8cm}
+
+    \setlength{\figsep}{4mm}
+    \setlength{\subfigwidth}{\dimexpr(\linewidth-\figsep)/2\relax}
+
+    \setkeys{Gin}{width=\subfigwidth}
 
     \begin{tikzpicture}[
         picnode/.style={inner sep=0pt},
-        node distance=4mm and 4mm,
-        subcap/.style={below=1mm of #1, text width=7.8cm, align=center, inner ysep=0pt}
+        node distance=4mm and \figsep,
+        subcap/.style={below=0mm of #1, text width=\subfigwidth, align=center, inner sep=0pt}
     ]
 
         \node[picnode] (A) {\includegraphics{1.5_figures/test figures/my_plot.pdf}};
@@ -41,32 +45,15 @@ Pellentesque posuere ligula id felis vehicula tincidunt \parencite{giampietroEst
 \vspace{-20pt}
 
 Mauris ultricies arcu ut neque semper, et pretium arcu sagittis. Mauris vestibulum maximus arcu. Sed vulputate convallis bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse posuere arcu sed ultricies gravida. In hac habitasse platea dictumst. Aliquam id erat id nunc luctus bibendum. Curabitur tincidunt leo nec urna posuere vestibulum. Morbi lacinia aliquam arcu, quis interdum tortor congue id. Aliquam semper varius imperdiet.
-Donec tincidunt magna et dolor volutpat aliquet. Etiam ac pretium ante. Nam quis lacus sit amet metus egestas laoreet. Sed in orci venenatis, laoreet mi non, ullamcorper quam. Nullam eu lobortis nibh. Duis id neque vitae dolor blandit maximus. Vivamus ligula velit, posuere ac tortor non, euismod aliquam nisi. Etiam a ultrices nisi, vitae tincidunt leo. Donec scelerisque felis magna, sit amet euismod ex sodales a. Nunc consectetur purus nunc, vitae volutpat lectus fringilla vitae.
-Suspendisse ut pharetra justo, non ultrices est. Fusce sit amet ante non sapien mollis elementum id eu augue. Donec consectetur risus eget tellus pellentesque, at maximus mi elementum. Morbi id dapibus ligula. Praesent vel tempor ipsum. Phasellus at justo venenatis, lobortis leo vitae, molestie metus. Cras ullamcorper ante eu mi laoreet, quis varius tellus consectetur.
 
-\begin{table}[h!]
-\caption{UMD Factor: Summary Statistics (Jan 1927–Feb 2026)}
-\footnotesize
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrr}
-\toprule
-\textbf{Statistic} & \textbf{Monthly} & \textbf{Annualized} \\
-\midrule
-Mean Return (\%) & 0.612 & 7.34 \\
-Standard Deviation (\%) & 4.68 & 16.21 \\
-Sharpe Ratio & - & 0.453 \\
-t-statistic & 4.51 & - \\
-p-value (two-tailed) & $7.11 \times 10^{-6}$ & - \\
-Number of Months & 1,190 & - \\
-\bottomrule
-\end{tabular*}
-\label{tab:summary_statistics}
-\end{table}
+Donec tincidunt magna et dolor volutpat aliquet. Etiam ac pretium ante. Nam quis lacus sit amet metus egestas laoreet. Sed in orci venenatis, laoreet mi non, ullamcorper quam. Nullam eu lobortis nibh. Duis id neque vitae dolor blandit maximus. Vivamus ligula velit, posuere ac tortor non, euismod aliquam nisi. Etiam a ultrices nisi, vitae tincidunt leo. Donec scelerisque felis magna, sit amet euismod ex sodales a. Nunc consectetur purus nunc, vitae volutpat lectus fringilla vitae.
+Suspendisse ut pharetra justo, non ultrices est. Fusce sit amet ante non sapien mollis elementum id eu augue. Donec consectetur risus eget tellus pellentesque, at maximus mi elementum. Morbi id dapibus ligula. Praesent vel tempor ipsum. Phasellus at justo venenatis, lobortis leo vitae, molestie metus. Cras ullamcorper ante eu mi laoreet, quis varius tellus consectetur\footnote{\marker{This would be the first footnote.}}.
 
 Donec ultrices consectetur dolor sed sodales. Cras efficitur turpis vitae lacus mollis cursus. Pellentesque iaculis nulla ac vestibulum fermentum. Pellentesque et velit non turpis suscipit congue. Aliquam vitae purus a nibh cursus sagittis. Nullam egestas viverra purus vitae varius. Sed maximus tempor vestibulum.
-Nunc tempor nulla justo, a posuere lorem tincidunt eget. Praesent dictum sed eros in pharetra. Vivamus nec dictum risus. Integer ac massa at magna rutrum pulvinar eget nec nunc. Curabitur tempor at lorem vitae venenatis. Suspendisse auctor posuere iaculis. Suspendisse egestas lobortis diam. Integer mattis. The approach by \textcite{guidolin_forecasting_2021} has shown that this is realistic\footnote{\marker{This would be the first footnote.}}. 
+Nunc tempor nulla justo, a posuere lorem tincidunt eget. Praesent dictum sed eros in pharetra. Vivamus nec dictum risus. Integer ac massa at magna rutrum pulvinar eget nec nunc. Curabitur tempor at lorem vitae venenatis. Suspendisse auctor posuere iaculis. Suspendisse egestas lobortis diam. Integer mattis. The approach by \textcite{guidolin_forecasting_2021} has shown that this is realistic. 
 
 \subsection{Citations}
-This is a cite: \cite{guidolin_forecasting_2021}, this a textcite: \textcite{guidolin_forecasting_2021}, this a parencite: \parencite{guidolin_forecasting_2021}, this a citeauthor: \citeauthor{guidolin_forecasting_2021}, this a citeyear: \citeyear{guidolin_forecasting_2021}, and this a parencite with two references: \parencite{giampietroEstimatingStochasticDiscount2018, guidolin_forecasting_2021}.
+This is a \verb|\cite{}|: \cite{guidolin_forecasting_2021}, this a \verb|\textcite{}|: \textcite{guidolin_forecasting_2021}, this a \verb|\parencite{}|: \parencite{guidolin_forecasting_2021}, this a \verb|\citeauthor{}|: \citeauthor{guidolin_forecasting_2021}, this a \verb|\citeyear{}|: \citeyear{guidolin_forecasting_2021}, and this a parencite with two references: \parencite{giampietroEstimatingStochasticDiscount2018, guidolin_forecasting_2021}.
 
 \begin{table}[h!]
 \caption{Citation Styles with BibLaTeX}
@@ -75,9 +62,9 @@ This is a cite: \cite{guidolin_forecasting_2021}, this a textcite: \textcite{gui
 \toprule
 \textbf{Command} & \textbf{authoryear} & \textbf{numeric} \\
 \midrule
-\verb|\cite{}|  & Author, Year & [number] \\
-\verb|\textcite{}|  & Author (Year) & Author [number] \\
-\verb|\parencite{}|  & (Author, Year)  & [number]\\
+\verb|\cite{}|  & Author, Year & [index] \\
+\verb|\textcite{}|  & Author (Year) & Author [index] \\
+\verb|\parencite{}|  & (Author, Year)  & [index]\\
 \verb|\citeauthor{}|  & Author & Author\\
 \verb|\citeyear{}|  & Year & Year (not linked)\\
 \bottomrule

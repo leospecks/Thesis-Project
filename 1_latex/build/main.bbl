@@ -18,15 +18,14 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global/global}
+  \datalist[entry]{nty/global//global/global/global}
     \entry{auerHaveTrendfollowingSignals2021a}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=263bdf8c038a048ee008ca0d31165c95}{%
+        {{hash=263bdf8c038a048ee008ca0d31165c95}{%
            family={Auer},
            familyi={A\bibinitperiod},
            given={Benjamin\bibnamedelima R.},
-           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
       \strng{namehash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{fullhash}{263bdf8c038a048ee008ca0d31165c95}
@@ -38,9 +37,6 @@
       \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Various trend-following trading rules have been shown to be valuable for predicting market directions and thus the formulation of investment strategies. However, recent equity market research has provided striking evidence that the predictive power of such rules appears to diminish over time due to increased investor attention and lowered arbitrage barriers. Given that trend-following rules are also very successful and have been widely used in futures markets, we analyze whether a similar effect can be observed for commodity futures contracts. Using a trend regression approach based on time-varying success ratios, we detect significantly higher predictive accuracy for cross-sectional than for time-series strategies. In addition, with the exception of a few commodities, we find no significant trending behavior in trading rule reliability. These results, which are robust in a variety of settings, indicate strong momentum stability in futures markets and justify the application of this class of trading rules in commodity futures investing.}
@@ -78,38 +74,32 @@
     \endentry
     \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=0078ab5541f1b18e45041916d385d467}{%
+        {{hash=0078ab5541f1b18e45041916d385d467}{%
            family={Giampietro},
            familyi={G\bibinitperiod},
            given={Marta},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
            family={Guidolin},
            familyi={G\bibinitperiod},
            given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
            family={Pedio},
            familyi={P\bibinitperiod},
            given={Manuela},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+           giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{0444f413b27e4205ba3414c84f4fa49d}
+      \strng{namehash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{fullhash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{fullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{bibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{authorbibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authornamehash}{0444f413b27e4205ba3414c84f4fa49d}
+      \strng{authornamehash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
@@ -146,18 +136,16 @@
     \endentry
     \entry{guidolinPredictingCommodityReturns2026}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
            family={Guidolin},
            familyi={G\bibinitperiod},
            given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab03470d6a1ea52d181252f0978e9d3d}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab03470d6a1ea52d181252f0978e9d3d}{%
            family={Ionta},
            familyi={I\bibinitperiod},
            given={Serena},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
+           giveni={S\bibinitperiod}}}%
       }
       \strng{namehash}{90386b30860a4ccc3e96b5ac2840ecc1}
       \strng{fullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
@@ -169,9 +157,6 @@
       \strng{authorfullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We test whether large-scale climate indicators contribute to the predictability of commodity futures returns and generate economic value for investors. Using monthly data on fourteen commodities, we conduct a pseudo out-of-sample forecasting exercise based on a range of models that include automatic variable selection and nonlinear regime-switching specifications. Climate-related predictors rarely outperform standard benchmarks in terms of statistical forecast accuracy. Yet, when embedded in a portfolio choice problem, they deliver economically meaningful gains. These results illustrate a disconnect between statistical predictability and economic relevance.}
@@ -208,18 +193,16 @@
     \endentry
     \entry{guidolin_forecasting_2021}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
            family={Guidolin},
            familyi={G\bibinitperiod},
            given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
            family={Pedio},
            familyi={P\bibinitperiod},
            given={Manuela},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+           giveni={M\bibinitperiod}}}%
       }
       \strng{namehash}{cbbd262db0e11eb93438c2e492997f29}
       \strng{fullhash}{cbbd262db0e11eb93438c2e492997f29}
@@ -231,250 +214,6 @@
       \strng{authorfullhashraw}{cbbd262db0e11eb93438c2e492997f29}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The aim of this paper is to assess whether three well-known commodity-specific variables (basis, hedging pressure, and momentum) may improve the predictive power for commodity futures returns of models otherwise based on macroeconomic factors. We compute recursive, out-of-sample forecasts for the monthly returns of fifteen commodity futures, when estimation is based on a stepwise model selection approach under a probabilityweighted regime-switching regression that identifies different volatility regimes. We systematically compare these forecasts with those produced by a simple AR(1) model that we use as a benchmark and we find that the inclusion of commodity-specific factors does not improve the forecasting power. We perform a back-testing exercise of a mean–variance investment strategy that exploits any predictability of the conditional risk premium of commodities, stocks, and bond returns, also consider transaction costs caused by portfolio rebalancing. The risk-adjusted performance of this strategy does not allow us to conclude that any forecasting approach outperforms the others. However, there is evidence that investment strategies based on commodity-specific predictors outperform the remaining strategies in the high-volatility state.}
-      \field{issn}{0254-5330, 1572-9338}
-      \field{journaltitle}{Annals of Operations Research}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{number}{1--2}
-      \field{shortjournal}{Ann Oper Res}
-      \field{shorttitle}{Forecasting Commodity Futures Returns with Stepwise Regressions}
-      \field{title}{Forecasting Commodity Futures Returns with Stepwise Regressions: {{Do}} Commodity-Specific Factors Help?}
-      \field{volume}{299}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{pages}{1317\bibrangedash 1356}
-      \range{pages}{40}
-      \verb{doi}
-      \verb 10.1007/s10479-020-03515-w
-      \endverb
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\P4A8ITVN\Guidolin and Pedio - 2021 - Forecasting commodity futures returns with stepwise regressions Do commodity-specific factors help.pdf
-      \endverb
-      \keyw{Commodity returns,Portfolio back-testing,Predictability,Stepwise regression}
-    \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global/global}
-    \entry{auerHaveTrendfollowingSignals2021a}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=263bdf8c038a048ee008ca0d31165c95}{%
-           family={Auer},
-           familyi={A\bibinitperiod},
-           given={Benjamin\bibnamedelima R.},
-           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{fullhash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{fullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{bibnamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorbibnamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
-      \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Various trend-following trading rules have been shown to be valuable for predicting market directions and thus the formulation of investment strategies. However, recent equity market research has provided striking evidence that the predictive power of such rules appears to diminish over time due to increased investor attention and lowered arbitrage barriers. Given that trend-following rules are also very successful and have been widely used in futures markets, we analyze whether a similar effect can be observed for commodity futures contracts. Using a trend regression approach based on time-varying success ratios, we detect significantly higher predictive accuracy for cross-sectional than for time-series strategies. In addition, with the exception of a few commodities, we find no significant trending behavior in trading rule reliability. These results, which are robust in a variety of settings, indicate strong momentum stability in futures markets and justify the application of this class of trading rules in commodity futures investing.}
-      \field{day}{1}
-      \field{issn}{2373-8529}
-      \field{journaltitle}{Financial Markets and Portfolio Management}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{4}
-      \field{shortjournal}{Financ Mark Portf Manag}
-      \field{title}{Have Trend-Following Signals in Commodity Futures Markets Become Less Reliable in Recent Years?}
-      \field{urlday}{23}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{35}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{533\bibrangedash 553}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1007/s11408-021-00385-5
-      \endverb
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\6NSC6ITA\Auer - 2021 - Have trend-following signals in commodity futures markets become less reliable in recent years.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s11408-021-00385-5
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s11408-021-00385-5
-      \endverb
-      \keyw{C10,Commodity futures,G10,G17,Momentum,Moving averages,Trend-following rules,Trends}
-    \endentry
-    \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=0078ab5541f1b18e45041916d385d467}{%
-           family={Giampietro},
-           familyi={G\bibinitperiod},
-           given={Marta},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
-           family={Pedio},
-           familyi={P\bibinitperiod},
-           given={Manuela},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{0444f413b27e4205ba3414c84f4fa49d}
-      \strng{fullhash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{fullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{bibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authorbibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authornamehash}{0444f413b27e4205ba3414c84f4fa49d}
-      \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
-      \field{day}{1}
-      \field{issn}{0377-2217}
-      \field{journaltitle}{European Journal of Operational Research}
-      \field{month}{3}
-      \field{number}{2}
-      \field{shortjournal}{European Journal of Operational Research}
-      \field{shorttitle}{Estimating Stochastic Discount Factor Models with Hidden Regimes}
-      \field{title}{Estimating Stochastic Discount Factor Models with Hidden Regimes: {{Applications}} to Commodity Pricing}
-      \field{urlday}{21}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{265}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{685\bibrangedash 702}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1016/j.ejor.2017.07.045
-      \endverb
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\MP3QELU9\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
-      \endverb
-      \keyw{Commodities,Finance,Hidden Markov model,Stochastic discount factor}
-    \endentry
-    \entry{guidolinPredictingCommodityReturns2026}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab03470d6a1ea52d181252f0978e9d3d}{%
-           family={Ionta},
-           familyi={I\bibinitperiod},
-           given={Serena},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{fullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{fullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{bibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorbibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authornamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorfullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorfullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{We test whether large-scale climate indicators contribute to the predictability of commodity futures returns and generate economic value for investors. Using monthly data on fourteen commodities, we conduct a pseudo out-of-sample forecasting exercise based on a range of models that include automatic variable selection and nonlinear regime-switching specifications. Climate-related predictors rarely outperform standard benchmarks in terms of statistical forecast accuracy. Yet, when embedded in a portfolio choice problem, they deliver economically meaningful gains. These results illustrate a disconnect between statistical predictability and economic relevance.}
-      \field{day}{1}
-      \field{issn}{0165-1765}
-      \field{journaltitle}{Economics Letters}
-      \field{month}{6}
-      \field{shortjournal}{Economics Letters}
-      \field{shorttitle}{Predicting Commodity Returns with Climate Variables}
-      \field{title}{Predicting Commodity Returns with Climate Variables: {{Statistical}} Loss Functions vs. Economic Value}
-      \field{urlday}{29}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{265}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{113028}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.econlet.2026.113028
-      \endverb
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\THZHN25Q\Guidolin and Ionta - 2026 - Predicting commodity returns with climate variables Statistical loss functions vs. economic value.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
-      \endverb
-      \keyw{Certainty equivalent returns,Climate risk,Commodity futures,Hidden Markov models,Loss functions}
-    \endentry
-    \entry{guidolin_forecasting_2021}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
-           family={Pedio},
-           familyi={P\bibinitperiod},
-           given={Manuela},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{fullhash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{fullhashraw}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{bibnamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorbibnamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authornamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorfullhash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorfullhashraw}{cbbd262db0e11eb93438c2e492997f29}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The aim of this paper is to assess whether three well-known commodity-specific variables (basis, hedging pressure, and momentum) may improve the predictive power for commodity futures returns of models otherwise based on macroeconomic factors. We compute recursive, out-of-sample forecasts for the monthly returns of fifteen commodity futures, when estimation is based on a stepwise model selection approach under a probabilityweighted regime-switching regression that identifies different volatility regimes. We systematically compare these forecasts with those produced by a simple AR(1) model that we use as a benchmark and we find that the inclusion of commodity-specific factors does not improve the forecasting power. We perform a back-testing exercise of a mean–variance investment strategy that exploits any predictability of the conditional risk premium of commodities, stocks, and bond returns, also consider transaction costs caused by portfolio rebalancing. The risk-adjusted performance of this strategy does not allow us to conclude that any forecasting approach outperforms the others. However, there is evidence that investment strategies based on commodity-specific predictors outperform the remaining strategies in the high-volatility state.}

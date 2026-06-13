@@ -39,6 +39,9 @@
 \usetikzlibrary{positioning}
 \usepackage{subcaption}
 
+\newlength{\figsep}
+\newlength{\subfigwidth}
+
 % --------------------------------------------------
 % Tables, captions, and floats
 % --------------------------------------------------
@@ -188,7 +191,7 @@
 % --------------------------------------------------
 \usepackage[
   backend=biber,
-  style=apa,
+  style=numeric,
   natbib=true,
   defernumbers=true, 
   url=false
@@ -265,4 +268,4 @@
 % --------------------------------------------------
 \usepackage{soul}
 
-\newcommand{\marker}[1]{\sethlcolor{pink}\hl{#1}}
+\newcommand{\marker}[1]{{\sethlcolor{yellow!35}\hl{#1}}}
