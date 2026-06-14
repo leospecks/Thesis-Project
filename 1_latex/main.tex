@@ -4,7 +4,7 @@
 % Only compile one chapter to speed up compile time
 \newif\iffastcompile
 %\fastcompiletrue
-%\includeonly{1.1_chapters/3_methodology}
+%\includeonly{1.1_chapters/0_test chapter}
 
 \title{\vspace*{6cm}\textsf{\textbf{Can Machine Learning Variable Selection and Individual Commodity Fundamentals Improve Futures Return Forecasting?}}}
 \author{Leo Specks \\ Supervisor: Prof. Massimo Guidolin\\ MSc Finance, Università Bocconi}
@@ -30,13 +30,17 @@
     \hypersetup{linkcolor=black}
     \tableofcontents
   }
+
 \fi
 
 % CHAPTERS
+
+\onehalfspacing % or \setstretch{1.2}
+
 \include{1.1_chapters/0_test chapter}
 \include{1.1_chapters/1_introduction}
 \include{1.1_chapters/2_literature review}
-\include{1.1_chapters/3_methodology}
+\include{1.1_chapters/old_methodology}
 \include{1.1_chapters/4_data}
 \include{1.1_chapters/5_replication & baseline results}
 \include{1.1_chapters/6_extension I}
@@ -66,6 +70,8 @@
   \markboth{References}{References}
   \addcontentsline{toc}{section}{References}
   \newpage
+
+  \listofacronyms
 
   % APPENDIX
   %\include{1.4_backmatter/appendix}

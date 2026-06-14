@@ -26,8 +26,12 @@
   colorlinks=true,
   linkcolor=blue,
   urlcolor=.,
-  citecolor=blue
+  citecolor=blue,
 ]{hyperref}
+
+\hypersetup{
+  pdftitle={Thesis Draft\_Leo Specks}
+}
 
 % --------------------------------------------------
 % Colors and graphics
@@ -124,6 +128,13 @@
 \setlength{\columnsep}{7mm}
 
 \usepackage{setspace}
+\usepackage{etoolbox}
+
+\AtBeginEnvironment{figure}{\singlespacing}
+\AtBeginEnvironment{table}{\singlespacing}
+\AtBeginEnvironment{tabular}{\singlespacing}
+\AtBeginEnvironment{longtable}{\singlespacing}
+
 
 
 % --------------------------------------------------
@@ -193,6 +204,7 @@
   backend=biber,
   style=numeric,
   natbib=true,
+  sorting=none,
   defernumbers=true, 
   url=false
 ]{biblatex}
@@ -268,5 +280,31 @@
 % --------------------------------------------------
 \usepackage{soul}
 
-\newcommand{\marker}[1]{{\sethlcolor{yellow!35}\hl{#1}}}
+\newcommand{\yellowmarker}[1]{{\sethlcolor{yellow!35}\hl{#1}}}
 \newcommand{\bluemarker}[1]{{\sethlcolor{blue!10}\hl{#1}}}
+\newcommand{\redmarker}[1]{{\sethlcolor{red!20}\hl{#1}}}
+\newcommand{\greenmarker}[1]{{\sethlcolor{green!20}\hl{#1}}}
+\newcommand{\orangemarker}[1]{{\sethlcolor{orange!20}\hl{#1}}}
+
+% --------------------------------------------------
+% Acronyms
+% --------------------------------------------------
+\usepackage{acro}
+\acsetup{
+  make-links = true
+}
+
+\ExplSyntaxOn
+\cs_set:Npn \__acro_color_link:n #1 {#1}
+\ExplSyntaxOff
+
+\newcommand{\listofacronyms}{%
+  \clearpage
+  \phantomsection
+  \section*{List of Acronyms}%
+  \addcontentsline{toc}{section}{List of Acronyms}%
+  \markboth{List of Acronyms}{List of Acronyms}%
+  \printacronyms[heading=none]
+}
+
+\input{1.2_preamble/acronyms.tex}
