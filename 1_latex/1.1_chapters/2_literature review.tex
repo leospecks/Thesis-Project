@@ -1,14 +1,24 @@
 % !TeX root = ../main.tex
 
-\section{Literature Review}
+\section{Literature Review} \label{sec: literature review}
+This section will review the existing literature on the topic and work out the research gap this thesis aims to explore. Subsection \ref{subsec: literature_commodity forecasting} goes over existing approaches used in commodity forecasting and presents previous and remaining challenges. Subsection \ref{subsec: literature_transfer learning} explores the field of transfer learning as a potential solution for some of these remaining challenges. Subsection \ref{subsec: literature_research gap} shows where the existing literature leaves a gap that this thesis aims to fill, as the intersection of transfer learning, commodity markets, and data-sparse emerging economies.
 
-\subsection{Theories of Commodity Futures Returns}
-\subsection{Prevailing Commodity Forecasting Approaches}
-\label{subsec: prevailing approaches}
-\subsection{Cross-Market Transferability}
-Some of the more complex models seen in Subsection \ref{subsec: prevailing approaches} suffer from needing of a lot of data. For some more niche markets with shorter histories and more constrained datasets this raises a problem. The most straightforward and perhaps naive solution is to simply train models on data-rich markets and implement them on data-sparse ones. However, it has been shown that traditional models fail when being transferred  cross-market. When trying to transfer a \ac{cnn} model trained on US commodity futures to predict returns of the Chinese market, \textcite{haoPredictingCommodityReturns2025} find that this model fails to systematically outperform models trained on data specific to the Chinese market. These results suggest that there are no significant return-predictive patterns from US commodity futures which generalize across different markets.  \textcite{haoPredictingCommodityReturns2025} give two explanations on why employing models cross-market fails in commodity markets. \redmarker{insert reasons} Furthermore, \textcite{nguyenModelingForecastingCommodity2018} have also found results to be heterogeneous across different commodity futures as no single model fit all commodities. It seems that traditional models lack cross-market transferability across both different countries and commodities.\par \medskip
+%-----------------------------------------------------------------------------------------
+\subsection{Commodity Forecasting}  \label{subsec: literature_commodity forecasting}
+\subsubsection{Classical Approaches}    \label{subsubsec: literature_classical approaches}
+\subsubsection{Machine Learning \& Deep Learning in Commodity Markets}
+\subsubsection{Data Scarcity in Emerging Economies}
+\subsubsection{Cross-Market Transferability}
+Some of the more complex models seen in Subsubsection \ref{subsubsec: literature_classical approaches} suffer from needing of a lot of data. For some more niche markets with shorter histories and more constrained datasets this raises a problem. The most straightforward and perhaps naive solution is to simply train models on data-rich markets and implement them on data-sparse ones. However, it has been shown that traditional models fail when being transferred  cross-market. When trying to transfer a \ac{cnn} model trained on US commodity futures to predict returns of the Chinese market, \textcite{haoPredictingCommodityReturns2025} find that this model fails to systematically outperform models trained on data specific to the Chinese market. These results suggest that there are little significant return-predictive patterns from US commodity futures which generalize across different markets.  \textcite{haoPredictingCommodityReturns2025} give two explanations on why employing models cross-market fails in commodity markets. \redmarker{insert reasons} Furthermore, \textcite{nguyenModelingForecastingCommodity2018} have also found results to be heterogeneous across different commodity futures as no single model fit all commodities. It seems that traditional models lack cross-market transferability across both different countries and commodities.\par \medskip
 
 This shortcoming naturally invites the exploration of methodologies, which aim to built predictors, that allow for differences cross-market. The goal is to leverage data-rich markets, while still being able to include market-specific characteristics. This approach can be categorised as a transfer learning technique, which is a subset of machine learning, that allows for the assumption of different domains, tasks and distributions between the training and test set \parencite{panSurveyTransferLearning2010}. 
 
-\subsubsection{Domain Adaptation and Fine‑Tuning}
+%-----------------------------------------------------------------------------------------
+\subsection{Transfer Learning: Foundations \& Applications} \label{subsec: literature_transfer learning}
+\subsubsection{What is Transfer Learning?}
+\subsubsection{Transfer Learning in Finance}
+\subsubsection{Domain Adaptation Techniques}
 \textcite{mashettyTransferLearningCrossMarket2025a} \redmarker{explain approach} This approach proved to outperform both a traditional machine learning model and a deep learning model, which were trained only on target data, in all three chosen metrics, namely \ac{mae}, \ac{rmse} and directional accuracy.
+
+%-----------------------------------------------------------------------------------------
+\subsection{Research Gap \& Positioning}    \label{subsec: literature_research gap}

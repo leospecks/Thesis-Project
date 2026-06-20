@@ -3,7 +3,7 @@
 % --------------------------------------------------
 % Document class
 % --------------------------------------------------
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper, twoside]{article}
 
 % --------------------------------------------------
 % Language and typography
@@ -45,6 +45,69 @@
 
 \newlength{\figsep}
 \newlength{\subfigwidth}
+
+
+% --------------------------------------------------
+% Draft layout tools
+% --------------------------------------------------
+\usepackage{tikzpagenodes}
+\usepackage[mathlines]{lineno}
+
+% Main toggle
+\newif\ifdraftlayouttools
+
+%\draftlayouttoolstrue      % show all draft helpers
+\draftlayouttoolsfalse   % hide all draft helpers
+
+% --------------------------------------------------
+% 1. Margin guidelines
+% --------------------------------------------------
+\AddToHook{shipout/background}{%
+  \ifdraftlayouttools
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[blue, line width=0.4pt, dashed]
+        (current page text area.north west)
+        rectangle
+        (current page text area.south east);
+    \end{tikzpicture}%
+  \fi
+}
+
+% --------------------------------------------------
+% 2. Line numbers
+% --------------------------------------------------
+\linenumbersep=8pt
+\renewcommand\linenumberfont{\normalfont\tiny\sffamily\color{blue}}
+
+\AtBeginDocument{%
+  \ifdraftlayouttools
+    \pagewiselinenumbers
+    \linenumbers
+  \fi
+}
+
+% --------------------------------------------------
+% 3. Image borders
+% --------------------------------------------------
+\let\oldincludegraphics\includegraphics
+
+\RenewDocumentCommand{\includegraphics}{O{} m}{%
+  \ifdraftlayouttools
+    \begingroup
+    \tikz[baseline=(img.base)]{
+      \node[
+        draw=black,
+        line width=0.8pt,
+        dashed,
+        inner sep=0pt,
+        outer sep=0pt
+      ] (img) {\oldincludegraphics[#1]{#2}};
+    }%
+    \endgroup
+  \else
+    \oldincludegraphics[#1]{#2}%
+  \fi
+}
 
 % --------------------------------------------------
 % Tables, captions, and floats
@@ -124,6 +187,8 @@
     includefoot
 }
 
+\raggedbottom
+
 \setlength{\headheight}{15pt}
 \setlength{\columnsep}{7mm}
 
@@ -151,8 +216,11 @@
 
 \renewcommand{\sectionmark}[1]{\markboth{\thesection\ #1}{}}
 
-\rhead{\leftmark}
-\rfoot{\thepage}
+\fancyhead[LE]{\leftmark} % even pages: section/chapter name on the left
+\fancyhead[RO]{\leftmark} % odd pages: section/chapter name on the right
+
+\fancyfoot[LE]{\thepage}  % even pages: page number bottom left
+\fancyfoot[RO]{\thepage}  % odd pages: page number bottom right
 
 \fancypagestyle{firstpage}{
     \fancyhf{}

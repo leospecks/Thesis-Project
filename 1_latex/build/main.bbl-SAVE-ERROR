@@ -18,7 +18,423 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0078ab5541f1b18e45041916d385d467}{%
+           family={Giampietro},
+           familyi={G\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
+           family={Guidolin},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
+           family={Pedio},
+           familyi={P\bibinitperiod},
+           given={Manuela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{fullhash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{fullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{bibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorbibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authornamehash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
+      \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
+      \field{day}{1}
+      \field{issn}{0377-2217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{European Journal of Operational Research}
+      \field{shorttitle}{Estimating Stochastic Discount Factor Models with Hidden Regimes}
+      \field{title}{Estimating Stochastic Discount Factor Models with Hidden Regimes: {{Applications}} to Commodity Pricing}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{265}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{685\bibrangedash 702}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2017.07.045
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\MP3QELU9\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \endverb
+      \keyw{Commodities,Finance,Hidden Markov model,Stochastic discount factor}
+    \endentry
+    \entry{guidolin_forecasting_2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
+           family={Guidolin},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
+           family={Pedio},
+           familyi={P\bibinitperiod},
+           given={Manuela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{fullhash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{fullhashraw}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{bibnamehash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{authorbibnamehash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{authornamehash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{authorfullhash}{cbbd262db0e11eb93438c2e492997f29}
+      \strng{authorfullhashraw}{cbbd262db0e11eb93438c2e492997f29}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The aim of this paper is to assess whether three well-known commodity-specific variables (basis, hedging pressure, and momentum) may improve the predictive power for commodity futures returns of models otherwise based on macroeconomic factors. We compute recursive, out-of-sample forecasts for the monthly returns of fifteen commodity futures, when estimation is based on a stepwise model selection approach under a probabilityweighted regime-switching regression that identifies different volatility regimes. We systematically compare these forecasts with those produced by a simple AR(1) model that we use as a benchmark and we find that the inclusion of commodity-specific factors does not improve the forecasting power. We perform a back-testing exercise of a mean–variance investment strategy that exploits any predictability of the conditional risk premium of commodities, stocks, and bond returns, also consider transaction costs caused by portfolio rebalancing. The risk-adjusted performance of this strategy does not allow us to conclude that any forecasting approach outperforms the others. However, there is evidence that investment strategies based on commodity-specific predictors outperform the remaining strategies in the high-volatility state.}
+      \field{issn}{0254-5330, 1572-9338}
+      \field{journaltitle}{Annals of Operations Research}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1--2}
+      \field{shortjournal}{Ann Oper Res}
+      \field{shorttitle}{Forecasting Commodity Futures Returns with Stepwise Regressions}
+      \field{title}{Forecasting Commodity Futures Returns with Stepwise Regressions: {{Do}} Commodity-Specific Factors Help?}
+      \field{volume}{299}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{1317\bibrangedash 1356}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/s10479-020-03515-w
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\P4A8ITVN\Guidolin and Pedio - 2021 - Forecasting commodity futures returns with stepwise regressions Do commodity-specific factors help.pdf
+      \endverb
+      \keyw{Commodity returns,Portfolio back-testing,Predictability,Stepwise regression}
+    \endentry
+    \entry{guidolinPredictingCommodityReturns2026}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=99abfa3b83457e521eb56c2375131054}{%
+           family={Guidolin},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab03470d6a1ea52d181252f0978e9d3d}{%
+           family={Ionta},
+           familyi={I\bibinitperiod},
+           given={Serena},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{fullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{fullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{bibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorbibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authornamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorfullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \strng{authorfullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We test whether large-scale climate indicators contribute to the predictability of commodity futures returns and generate economic value for investors. Using monthly data on fourteen commodities, we conduct a pseudo out-of-sample forecasting exercise based on a range of models that include automatic variable selection and nonlinear regime-switching specifications. Climate-related predictors rarely outperform standard benchmarks in terms of statistical forecast accuracy. Yet, when embedded in a portfolio choice problem, they deliver economically meaningful gains. These results illustrate a disconnect between statistical predictability and economic relevance.}
+      \field{day}{1}
+      \field{issn}{0165-1765}
+      \field{journaltitle}{Economics Letters}
+      \field{month}{6}
+      \field{shortjournal}{Economics Letters}
+      \field{shorttitle}{Predicting Commodity Returns with Climate Variables}
+      \field{title}{Predicting Commodity Returns with Climate Variables: {{Statistical}} Loss Functions vs. Economic Value}
+      \field{urlday}{29}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{265}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{113028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.econlet.2026.113028
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\THZHN25Q\Guidolin and Ionta - 2026 - Predicting commodity returns with climate variables Statistical loss functions vs. economic value.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \endverb
+      \keyw{Certainty equivalent returns,Climate risk,Commodity futures,Hidden Markov models,Loss functions}
+    \endentry
+    \entry{haoPredictingCommodityReturns2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a206442a8edf13b2193482f129e95bc3}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Tianxiang},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7cec65522da4ced27256250c0dfd6891}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingfu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=117cef76f41dcdc0ed89a351c82cf1c8}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Deyu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5668391992970c1b50573a232574b57b}{%
+           family={Tse},
+           familyi={T\bibinitperiod},
+           given={Yiuman},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9ce55adb81632fa4567b223c95cddd6}
+      \strng{fullhash}{464c75dd20a9484f4a13f9bd49044e72}
+      \strng{fullhashraw}{464c75dd20a9484f4a13f9bd49044e72}
+      \strng{bibnamehash}{d9ce55adb81632fa4567b223c95cddd6}
+      \strng{authorbibnamehash}{d9ce55adb81632fa4567b223c95cddd6}
+      \strng{authornamehash}{d9ce55adb81632fa4567b223c95cddd6}
+      \strng{authorfullhash}{464c75dd20a9484f4a13f9bd49044e72}
+      \strng{authorfullhashraw}{464c75dd20a9484f4a13f9bd49044e72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine the predictability of commodity futures returns using image-based price patterns extracted from open-high-low-close (OHLC) charts. Applying convolutional neural networks (CNNs) to US commodity futures data, we extract predictive signals without predefined patterns such as momentum or mean reversion. Empirical results demonstrate that image-based predictions enhance predictive accuracy, particularly over short- and medium-term horizons, with 20-day OHLC images yielding the most robust performance. Compared with traditional financial predictors, CNNs capture nonlinear dependencies while retaining unique explanatory power. Panel regressions confirm that image-based predictions are correlated with established return factors. However, transfer learning—from the US to the Chinese markets—proves ineffective in commodity futures markets, highlighting the necessity of market-specific adaptation.}
+      \field{issn}{1096-9934}
+      \field{journaltitle}{Journal of Futures Markets}
+      \field{langid}{english}
+      \field{number}{12}
+      \field{title}{Predicting {{Commodity Returns Through Image-Based Price Patterns}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{45}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2434\bibrangedash 2456}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1002/fut.70043
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\L6M8BS6Y\Hao et al. - 2025 - Predicting Commodity Returns Through Image-Based Price Patterns.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/fut.70043
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/fut.70043
+      \endverb
+      \keyw{CNN,commodity futures,machine learning,OHLC charts,price pattern}
+    \endentry
+    \entry{nguyenModelingForecastingCommodity2018}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=7471a9b9b8b62f71b0dbc16421396369}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Duc\bibnamedelima Khuong},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c611c9b1ca56c0bdc6050a7c15579291}{%
+           family={Walther},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{fullhash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{fullhashraw}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{bibnamehash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{authorbibnamehash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{authornamehash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{authorfullhash}{f1e8313b1294e8ada3f4133132dc3a51}
+      \strng{authorfullhashraw}{f1e8313b1294e8ada3f4133132dc3a51}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper investigates the time-varying volatility patterns of some major commodities as well as the potential factors that drive their long-term volatility component. For this purpose, we make use of a recently proposed GARCH-MIDAS approach which typically allows us to examine the role of economic and financial variables of different frequencies. Using commodity futures for Crude Oil (WTI and Brent), Gold, Silver and Platinum as well as a commodity index, our results show the necessity of disentangling the short-term and long-term components in modeling and forecasting commodity volatility. They also indicate that the long-term volatility of most commodity futures is significantly driven by the level of the global real economic activity as well as the changes in consumer sentiment, industrial production, and economic policy uncertainty. However, the forecasting results are not alike across commodity futures as no single model fits all commodities.}
+      \field{day}{3}
+      \field{eprinttype}{Social Science Research Network}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{3294967}
+      \field{pubstate}{prepublished}
+      \field{title}{Modeling and {{Forecasting Commodity Market Volatility}} with {{Long-term Economic}} and {{Financial Variables}}}
+      \field{type}{SSRN Scholarly Paper}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.3294967
+      \endverb
+      \verb{eprint}
+      \verb 3294967
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\5U5HNPP5\Nguyen and Walther - 2018 - Modeling and Forecasting Commodity Market Volatility with Long-term Economic and Financial Variables.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=3294967
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=3294967
+      \endverb
+      \keyw{Commodity futures,GARCH,Long-term volatility,Macroeconomic effects,Mixed data sampling}
+    \endentry
+    \entry{panSurveyTransferLearning2010}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=224c02b5d289fefd08d4f9f1a83c5d0c}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Sinno\bibnamedelima Jialin},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=55242d2a60270145342841e4d4238da0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{fullhash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{fullhashraw}{770fc1d95710074c9506ab4f7d386573}
+      \strng{bibnamehash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{authorbibnamehash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{authornamehash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{authorfullhash}{770fc1d95710074c9506ab4f7d386573}
+      \strng{authorfullhashraw}{770fc1d95710074c9506ab4f7d386573}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A major assumption in many machine learning and data mining algorithms is that the training and future data must be in the same feature space and have the same distribution. However, in many real-world applications, this assumption may not hold. For example, we sometimes have a classification task in one domain of interest, but we only have sufficient training data in another domain of interest, where the latter data may be in a different feature space or follow a different data distribution. In such cases, knowledge transfer, if done successfully, would greatly improve the performance of learning by avoiding much expensive data-labeling efforts. In recent years, transfer learning has emerged as a new learning framework to address this problem. This survey focuses on categorizing and reviewing the current progress on transfer learning for classification, regression, and clustering problems. In this survey, we discuss the relationship between transfer learning and other related machine learning techniques such as domain adaptation, multitask learning and sample selection bias, as well as covariate shift. We also explore some potential future issues in transfer learning research.}
+      \field{issn}{1558-2191}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{A {{Survey}} on {{Transfer Learning}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1345\bibrangedash 1359}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TKDE.2009.191
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\Z9KMUZ5B\Pan and Yang - 2010 - A Survey on Transfer Learning.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/5288526/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/5288526/
+      \endverb
+      \keyw{Data mining,data mining.,Knowledge engineering,Knowledge transfer,Labeling,Learning systems,machine learning,Machine learning,Machine learning algorithms,Space technology,survey,Testing,Training data,Transfer learning}
+    \endentry
+    \entry{mashettyTransferLearningCrossMarket2025a}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=22dc7e9131b1b5a806c5ab63813875c7}{%
+           family={Mashetty},
+           familyi={M\bibinitperiod},
+           given={Purna\bibnamedelima Chander},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=fe36a2795822ff81ae6ebe1e698a2e3c}{%
+           family={Gangabathula},
+           familyi={G\bibinitperiod},
+           given={Sirish},
+           giveni={S\bibinitperiod}}}%
+        {{hash=26e6ff0307ebb4fa42e2fc93f4e6a9e1}{%
+           family={Gangabathula},
+           familyi={G\bibinitperiod},
+           given={Naga\bibnamedelima Venkatesh},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=f0838e27e6e1bff414f6763491031e82}{%
+           family={Pullalarevu},
+           familyi={P\bibinitperiod},
+           given={Neeraja},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8766a1bcb0a41cd77922a730c5f693ff}{%
+           family={Chaganti},
+           familyi={C\bibinitperiod},
+           given={Koushik\bibnamedelima Reddy},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=43d34c616c535d1926a25afe920800b3}{%
+           family={Chaganti},
+           familyi={C\bibinitperiod},
+           given={Sathvik\bibnamedelima Reddy},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0653e06ef8f87ad6b38e0c43c0c4a7c}
+      \strng{fullhash}{d955fa5514b52cb435a98169f5f3e1f2}
+      \strng{fullhashraw}{d955fa5514b52cb435a98169f5f3e1f2}
+      \strng{bibnamehash}{b0653e06ef8f87ad6b38e0c43c0c4a7c}
+      \strng{authorbibnamehash}{b0653e06ef8f87ad6b38e0c43c0c4a7c}
+      \strng{authornamehash}{b0653e06ef8f87ad6b38e0c43c0c4a7c}
+      \strng{authorfullhash}{d955fa5514b52cb435a98169f5f3e1f2}
+      \strng{authorfullhashraw}{d955fa5514b52cb435a98169f5f3e1f2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The procedure of financial forecasting faces tough challenges in growing unstable markets because these regimes bring a shortage of accessible data and unstable markets held back by multiple of translating systems. Such environments are hard for deep learning and traditional models because they require large amounts of high-quality training data to work correctly. The proposed method creates a sophisticated transfer learning framework that employs fixed models pretrained in well-established markets which it then adapts to developing countries using domain adaptation techniques coupled with the process of fine-tuning the models. The proposed scheme accomplishes data distribution minimizing functions from Maximum Mean Discrepancy, in addition to supervised fine-tuning that targets realizing predictions under the suppressed target information. The model suggested above scored better performance by experiment testing across emerging market indices in terms of all metric metrics including mean absolute error, root mean squared error and direction accuracy of compared models. Transfer learning is found to perform well in solving generalization issues in cross-market and hence can be considered as a great method for financial prediction in data-scarce volatile environments.}
+      \field{booktitle}{2025 6th {{International Conference}} on {{Data Intelligence}} and {{Cognitive Informatics}} ({{ICDICI}})}
+      \field{eventtitle}{2025 6th {{International Conference}} on {{Data Intelligence}} and {{Cognitive Informatics}} ({{ICDICI}})}
+      \field{month}{7}
+      \field{shorttitle}{Transfer {{Learning}} for {{Cross-Market Predictions}}}
+      \field{title}{Transfer {{Learning}} for {{Cross-Market Predictions}}: {{Applications}} in {{Emerging}} and {{Volatile Economies}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{621\bibrangedash 626}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICDICI66477.2025.11135015
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\IVQKEQGQ\Mashetty et al. - 2025 - Transfer Learning for Cross-Market Predictions Applications in Emerging and Volatile Economies.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/11135015
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/11135015
+      \endverb
+      \keyw{Accuracy,Adaptation models,Biological system modeling,cross-market prediction,Data models,Deep learning,domain adaptation,emerging markets,financial forecasting,Forecasting,Testing,Time series analysis,time-series analysis,Training data,Transfer learning,volatility modelling}
+    \endentry
     \entry{auerHaveTrendfollowingSignals2021a}{article}{}{}
       \name{author}{1}{}{%
         {{hash=263bdf8c038a048ee008ca0d31165c95}{%
@@ -35,8 +451,8 @@
       \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Various trend-following trading rules have been shown to be valuable for predicting market directions and thus the formulation of investment strategies. However, recent equity market research has provided striking evidence that the predictive power of such rules appears to diminish over time due to increased investor attention and lowered arbitrage barriers. Given that trend-following rules are also very successful and have been widely used in futures markets, we analyze whether a similar effect can be observed for commodity futures contracts. Using a trend regression approach based on time-varying success ratios, we detect significantly higher predictive accuracy for cross-sectional than for time-series strategies. In addition, with the exception of a few commodities, we find no significant trending behavior in trading rule reliability. These results, which are robust in a variety of settings, indicate strong momentum stability in futures markets and justify the application of this class of trading rules in commodity futures investing.}
@@ -72,171 +488,289 @@
       \endverb
       \keyw{C10,Commodity futures,G10,G17,Momentum,Moving averages,Trend-following rules,Trends}
     \endentry
-    \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0078ab5541f1b18e45041916d385d467}{%
-           family={Giampietro},
-           familyi={G\bibinitperiod},
-           given={Marta},
-           giveni={M\bibinitperiod}}}%
-        {{hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod}}}%
-        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
-           family={Pedio},
+    \entry{haoDynamicConnectednessHigher2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2397ba80d9f74d4a20f1c53472bd4148}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c080ff9412e9adc55d2ce7b622234b7c}{%
+           family={Pham},
            familyi={P\bibinitperiod},
-           given={Manuela},
-           giveni={M\bibinitperiod}}}%
+           given={Linh},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{fullhash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{fullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{bibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authorbibnamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authornamehash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
-      \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \strng{namehash}{955b436a18090e65edfe63e8236f725c}
+      \strng{fullhash}{955b436a18090e65edfe63e8236f725c}
+      \strng{fullhashraw}{955b436a18090e65edfe63e8236f725c}
+      \strng{bibnamehash}{955b436a18090e65edfe63e8236f725c}
+      \strng{authorbibnamehash}{955b436a18090e65edfe63e8236f725c}
+      \strng{authornamehash}{955b436a18090e65edfe63e8236f725c}
+      \strng{authorfullhash}{955b436a18090e65edfe63e8236f725c}
+      \strng{authorfullhashraw}{955b436a18090e65edfe63e8236f725c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Focusing on clean energy stocks and oil prices, we find that connectedness between these assets not only exists in volatility, but also at higher-order moments, such as skewness and kurtosis, which have been largely under studied in the existing literature. Estimating the connectedness using intra-day data, our initial static analyses suggest that the connectedness between the clean energy and oil markets is heterogenous across the moments and the shock transmitter/recipient role played by each market varies across moments. Further dynamic analyses indicate that higher-order moment connectedness is also time varying and appears to be stronger during uncertain market conditions. In addition, we identify day-of-the-week patterns of higher-order moment connectedness during high uncertainty periods, but these patterns appear to be reversed during low uncertainty periods. The employment of Markov switching regression models further corroborates the market uncertainties as the determinants of higher-order moment connectedness. As an important extension, we provide empirical evidence that including clean energy stocks in the investment portfolio can effectively hedge oil price risks and considering higher-order moments in constructing investment strategies adds extra value to investors. Our utility-based hedging strategy and minimum connectedness portfolio can offer higher utility gains and better risk-return trade-offs to those investors who are not infinitely risk-averse.}
       \field{day}{1}
-      \field{issn}{0377-2217}
-      \field{journaltitle}{European Journal of Operational Research}
-      \field{month}{3}
-      \field{number}{2}
-      \field{shortjournal}{European Journal of Operational Research}
-      \field{shorttitle}{Estimating Stochastic Discount Factor Models with Hidden Regimes}
-      \field{title}{Estimating Stochastic Discount Factor Models with Hidden Regimes: {{Applications}} to Commodity Pricing}
-      \field{urlday}{21}
-      \field{urlmonth}{5}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{month}{12}
+      \field{shortjournal}{Energy Economics}
+      \field{title}{Dynamic Connectedness in the Higher Moments between Clean Energy and Oil Prices}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
       \field{urlyear}{2026}
-      \field{volume}{265}
-      \field{year}{2018}
+      \field{volume}{140}
+      \field{year}{2024}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{685\bibrangedash 702}
-      \range{pages}{18}
+      \true{nocite}
+      \field{pages}{107987}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.ejor.2017.07.045
+      \verb 10.1016/j.eneco.2024.107987
       \endverb
       \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\MP3QELU9\Giampietro et al. - 2018 - Estimating stochastic discount factor models with hidden regimes Applications to commodity pricing.pdf
+      \verb C:\Users\Leo\Zotero\storage\YSU8WYX5\Hao and Pham - 2024 - Dynamic connectedness in the higher moments between clean energy and oil prices.pdf
       \endverb
       \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988324006959
       \endverb
       \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0377221717306720
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988324006959
       \endverb
-      \keyw{Commodities,Finance,Hidden Markov model,Stochastic discount factor}
+      \keyw{Clean energy,Higher-order moment portfolio strategies,Higher-order moment spillovers,Oil}
     \endentry
-    \entry{guidolinPredictingCommodityReturns2026}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ab03470d6a1ea52d181252f0978e9d3d}{%
-           family={Ionta},
-           familyi={I\bibinitperiod},
-           given={Serena},
+    \entry{merelloEnsembleApplicationTransfer2019}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=a898ca303c0613631c885f321c660099}{%
+           family={Merello},
+           familyi={M\bibinitperiod},
+           given={Simone},
            giveni={S\bibinitperiod}}}%
+        {{hash=c951aba942a77be1a8f2fdf79b1baf44}{%
+           family={Ratto},
+           familyi={R\bibinitperiod},
+           given={Andrea\bibnamedelima Picasso},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=5ac1aad6cfc103482fc43476932564a3}{%
+           family={Oneto},
+           familyi={O\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=db089768b8819956d932b3c8db18d498}{%
+           family={Cambria},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{fullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{fullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{bibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorbibnamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authornamehash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorfullhash}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \strng{authorfullhashraw}{90386b30860a4ccc3e96b5ac2840ecc1}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \strng{namehash}{c5e9668dc918a56b2cc86939ebed02d1}
+      \strng{fullhash}{2124c0013ddc8490da36717d967b432e}
+      \strng{fullhashraw}{2124c0013ddc8490da36717d967b432e}
+      \strng{bibnamehash}{c5e9668dc918a56b2cc86939ebed02d1}
+      \strng{authorbibnamehash}{c5e9668dc918a56b2cc86939ebed02d1}
+      \strng{authornamehash}{c5e9668dc918a56b2cc86939ebed02d1}
+      \strng{authorfullhash}{2124c0013ddc8490da36717d967b432e}
+      \strng{authorfullhashraw}{2124c0013ddc8490da36717d967b432e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Forecasting stock market behavior is an interesting and challenging problem. Regression of prices and classification of daily returns have been widely studied with the main goal of supplying forecasts useful in real trading scenarios. Unfortunately, the outcomes are not directly related with the maximization of the financial gain. Firstly, the optimal strategy requires to invest on the most performing asset every period and trading accordingly is not trivial given the predictions. Secondly, price fluctuations of different magnitude are often treated as equals even if during market trading losses or gains of different intensities are derived. In this paper, the problem of stock market forecasting is formulated as regression of market returns. This approach is able to estimate the amount of price change and thus the most performing assets. Price fluctuations of different magnitude are treated differently through the application of different weights on samples and the scarcity of data is addressed using transfer learning. Results on a real simulation of trading show how, given a finite amount of capital, the predictions can be used to invest in high performing stocks and, hence, achieve higher profits with less trades.}
+      \field{booktitle}{2019 {{International Joint Conference}} on {{Neural Networks}} ({{IJCNN}})}
+      \field{eventtitle}{2019 {{International Joint Conference}} on {{Neural Networks}} ({{IJCNN}})}
+      \field{issn}{2161-4407}
+      \field{month}{7}
+      \field{title}{Ensemble {{Application}} of {{Transfer Learning}} and {{Sample Weighting}} for {{Stock Market Prediction}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IJCNN.2019.8851938
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\3N2BZV6M\Merello et al. - 2019 - Ensemble Application of Transfer Learning and Sample Weighting for Stock Market Prediction.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8851938
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8851938
+      \endverb
+      \keyw{Cathode ray tubes,Financial forecasting,Forecasting,Neural networks,Predictive models,Stock market prediction,Stock markets,Task analysis,Training}
+    \endentry
+    \entry{moghadamForecastingAssetReturns2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f2074ec3efd0b5faf0f128e94de4ae9}{%
+           family={Moghadam},
+           familyi={M\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{fullhash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{fullhashraw}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{bibnamehash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{authorbibnamehash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{authornamehash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{authorfullhash}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \strng{authorfullhashraw}{0f2074ec3efd0b5faf0f128e94de4ae9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a novel sentiment-driven framework for forecasting asset returns and modeling volatility by integrating machine learning and time-series econometric techniques. Leveraging a dataset of over 347,000 asset-specific news headlines and financial data spanning from March 2022 to January 2025, we first develop a Random Forest classifier to assess the likelihood that daily news headlines will significantly impact asset returns positively or negatively across four key time frames: Open-to-Close, Open-to-Open, Close-to-Close, and Close-to-Open. In parallel, we utilize the FinBERT model to extract average sentiment scores from headlines and construct sentiment-based exogenous variables. These features are incorporated into an extended FIGARCH(1,1)~model to examine their predictive contributions to return volatility. Empirical results across 37 assets from stock, cryptocurrency, and commodity markets demonstrate that the inclusion of sentiment and impact probability features improves model performance (measured by AIC, BIC, and log-likelihood), particularly in time frames sensitive to market openings and overnight news. Our findings underscore the value of combining textual sentiment indicators produced by the FinBERT model, which is specifically trained on financial data, alongside directional time frame-based impact probabilities computed by the Random Forest model with advanced volatility modeling to enhance financial forecasting and support informed decision-making in dynamic markets.}
+      \field{day}{23}
+      \field{eprinttype}{Social Science Research Network}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{5943491}
+      \field{pubstate}{prepublished}
+      \field{title}{Forecasting {{Asset Returns}} with {{Sentiment-Enhanced FIGARCH Models}}}
+      \field{type}{SSRN Scholarly Paper}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2139/ssrn.5943491
+      \endverb
+      \verb{eprint}
+      \verb 5943491
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\3YVMI4XD\Moghadam - 2025 - Forecasting Asset Returns with Sentiment-Enhanced FIGARCH Models.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=5943491
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=5943491
+      \endverb
+      \keyw{FIGARCH,FinBERT,Random Forest Model,Return Prediction,Sentiment Analysis}
+    \endentry
+    \entry{tissaouiSentimentMomentumRegimedependent2026}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9756b7a15aaece37622598354041dbed}{%
+           family={Tissaoui},
+           familyi={T\bibinitperiod},
+           given={Kais},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cf40cfcb148bb5bb8e91c122869e3b26}{%
+           family={Azibi},
+           familyi={A\bibinitperiod},
+           given={Nadia},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Inc.}%
+      }
+      \strng{namehash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{fullhash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{fullhashraw}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{bibnamehash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{authorbibnamehash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{authornamehash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{authorfullhash}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \strng{authorfullhashraw}{76e828bb8b702d1fdb1f3b2e7f531373}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{We test whether large-scale climate indicators contribute to the predictability of commodity futures returns and generate economic value for investors. Using monthly data on fourteen commodities, we conduct a pseudo out-of-sample forecasting exercise based on a range of models that include automatic variable selection and nonlinear regime-switching specifications. Climate-related predictors rarely outperform standard benchmarks in terms of statistical forecast accuracy. Yet, when embedded in a portfolio choice problem, they deliver economically meaningful gains. These results illustrate a disconnect between statistical predictability and economic relevance.}
+      \field{abstract}{This paper uses higher-order derivatives of the VIX and MOVE indices, more especially, their velocity, acceleration, and jerk, as indicators of sentiment momentum to examine the predictive ability of dynamic financial fear sentiment on crude oil returns. To understand the system-dependent nature of oil market dynamics, we examine the impact of sentiment derivatives on crude oil returns under stable and turbulent conditions using the Markov Switching Regression (MSR) framework. Our empirical study, which uses daily data from 2002 to 2025, shows that sentiment velocity (VIX\_V, MOVE\_V) and acceleration (VIX\_A, MOVE\_A) have significant predictive value for oil returns under stable market conditions. However, their predictive effectiveness decreases under high volatility conditions, supporting the information saturation hypothesis. Comparing derivatives with fixed sentiment levels reveals a better continuous model fit and early warning signals for increased volatility. The results show the asymmetric and nonlinear flow of fear from financial markets to commodity markets, highlighting the need to incorporate mood momentum into forecasting models. Robustness checks, incorporating out-of-sample prediction tests, macro-financial control variables (DXY, GPR), and Fourier-based seasonal components, confirm the stability of these results. The sentiment momentum remains the dominant driver of regime-dependent return dynamics, with seasonal and cyclical patterns contributing little explanatory power. Compared with stationary sentiment levels, derivative-based measures consistently deliver superior model fit and earlier signals of transitions into high-volatility regimes. The evidence highlights the asymmetric and nonlinear transmission of fear from financial to commodity markets, emphasizing the need to incorporate mood momentum into forecasting frameworks. Policymakers can use sentiment acceleration as a leading indicator to change communication or intervention timing in macroeconomics sensitive to energy consumption; risk managers can include sentiment velocity into real-time monitoring systems to optimize hedging strategies. © 2026 The Authors.}
+      \field{issn}{1059-0560}
+      \field{journaltitle}{International Review of Economics and Finance}
+      \field{langid}{english}
+      \field{shortjournal}{Int. Rev. Econ. Financ.}
+      \field{shorttitle}{Sentiment Momentum and Regime-Dependent Predictability in Crude Oil Markets}
+      \field{title}{Sentiment Momentum and Regime-Dependent Predictability in Crude Oil Markets: {{A Markov Switching}} Analysis with Higher-Order {{VIX}} and {{MOVE}} Derivatives}
+      \field{volume}{108}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1016/j.iref.2026.105197
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\F49Z8BRE\Tissaoui and Azibi - 2026 - Sentiment momentum and regime-dependent predictability in crude oil markets A Markov Switching anal.pdf
+      \endverb
+      \keyw{Crude oil returns,Regime-sensitive modelling,Sentiment momentum,Stable regime,VIX and MOVE derivatives,Volatile regime}
+    \endentry
+    \entry{yangClimatePhysicalRisks2026}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ffc6e98cdb5fcaae9b79cd4ce7d15efa}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4656453b716273b4ea07ab731e9b6dd5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=21a7a88b31abefa1419144a91cdbaa9d}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{fullhash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{fullhashraw}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{bibnamehash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{authorbibnamehash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{authornamehash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{authorfullhash}{61da12f991856b9ef2783a36fc0503ac}
+      \strng{authorfullhashraw}{61da12f991856b9ef2783a36fc0503ac}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper focuses on the impacts of climate physical risks on crop prices and proposes a novel method to evaluate the vulnerability of five agricultural commodities, i.e., wheat, maize, soybean, rice, and barley. We identified the high vulnerability of maize and high resistance of rice to shocks of physical risks. During the period from 2020 to 2022, the vulnerability of global agricultural commodity markets sharply rose. The findings provide novel insight into the influence of climate change on agricultural sectors.}
       \field{day}{1}
       \field{issn}{0165-1765}
       \field{journaltitle}{Economics Letters}
-      \field{month}{6}
+      \field{month}{1}
       \field{shortjournal}{Economics Letters}
-      \field{shorttitle}{Predicting Commodity Returns with Climate Variables}
-      \field{title}{Predicting Commodity Returns with Climate Variables: {{Statistical}} Loss Functions vs. Economic Value}
-      \field{urlday}{29}
-      \field{urlmonth}{5}
+      \field{title}{Climate Physical Risks and the Vulnerability of Global Agricultural Commodities}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
       \field{urlyear}{2026}
-      \field{volume}{265}
+      \field{volume}{258}
       \field{year}{2026}
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \true{nocite}
-      \field{pages}{113028}
+      \field{pages}{112748}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.econlet.2026.113028
+      \verb 10.1016/j.econlet.2025.112748
       \endverb
       \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\THZHN25Q\Guidolin and Ionta - 2026 - Predicting commodity returns with climate variables Statistical loss functions vs. economic value.pdf
+      \verb C:\Users\Leo\Zotero\storage\MYJHNID9\Yang et al. - 2026 - Climate physical risks and the vulnerability of global agricultural commodities.pdf
       \endverb
       \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176525005853
       \endverb
       \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165176526002223
+      \verb https://www.sciencedirect.com/science/article/pii/S0165176525005853
       \endverb
-      \keyw{Certainty equivalent returns,Climate risk,Commodity futures,Hidden Markov models,Loss functions}
-    \endentry
-    \entry{guidolin_forecasting_2021}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=99abfa3b83457e521eb56c2375131054}{%
-           family={Guidolin},
-           familyi={G\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod}}}%
-        {{hash=414d52b63f2c2a31df59fea0aa6c1b71}{%
-           family={Pedio},
-           familyi={P\bibinitperiod},
-           given={Manuela},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{fullhash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{fullhashraw}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{bibnamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorbibnamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authornamehash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorfullhash}{cbbd262db0e11eb93438c2e492997f29}
-      \strng{authorfullhashraw}{cbbd262db0e11eb93438c2e492997f29}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The aim of this paper is to assess whether three well-known commodity-specific variables (basis, hedging pressure, and momentum) may improve the predictive power for commodity futures returns of models otherwise based on macroeconomic factors. We compute recursive, out-of-sample forecasts for the monthly returns of fifteen commodity futures, when estimation is based on a stepwise model selection approach under a probabilityweighted regime-switching regression that identifies different volatility regimes. We systematically compare these forecasts with those produced by a simple AR(1) model that we use as a benchmark and we find that the inclusion of commodity-specific factors does not improve the forecasting power. We perform a back-testing exercise of a mean–variance investment strategy that exploits any predictability of the conditional risk premium of commodities, stocks, and bond returns, also consider transaction costs caused by portfolio rebalancing. The risk-adjusted performance of this strategy does not allow us to conclude that any forecasting approach outperforms the others. However, there is evidence that investment strategies based on commodity-specific predictors outperform the remaining strategies in the high-volatility state.}
-      \field{issn}{0254-5330, 1572-9338}
-      \field{journaltitle}{Annals of Operations Research}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{number}{1--2}
-      \field{shortjournal}{Ann Oper Res}
-      \field{shorttitle}{Forecasting Commodity Futures Returns with Stepwise Regressions}
-      \field{title}{Forecasting Commodity Futures Returns with Stepwise Regressions: {{Do}} Commodity-Specific Factors Help?}
-      \field{volume}{299}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{pages}{1317\bibrangedash 1356}
-      \range{pages}{40}
-      \verb{doi}
-      \verb 10.1007/s10479-020-03515-w
-      \endverb
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\P4A8ITVN\Guidolin and Pedio - 2021 - Forecasting commodity futures returns with stepwise regressions Do commodity-specific factors help.pdf
-      \endverb
-      \keyw{Commodity returns,Portfolio back-testing,Predictability,Stepwise regression}
+      \keyw{Agricultural commodity,Climate physical risk,Food security,Vulnerability}
     \endentry
   \enddatalist
 \endrefsection

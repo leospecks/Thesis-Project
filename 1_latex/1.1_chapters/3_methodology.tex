@@ -1,8 +1,19 @@
 % !TeX root = ../main.tex
 
-\section{Methodology}
-\subsection{Baseline Framework (Replication)}
-\subsection{Extension I: Penalized Regression}
-\subsection{Extension II: Individual Fundamental Predictors}
-\subsection{OOS Evaluation Criteria}
-\subsection{Portfolio Back-Testing Framework}
+\section{Methodology} \label{sec: methodology}
+This section will build the transfer learning framework used to test whether forecasting performance can be improved compared to known approaches. Subsection \ref{subsec: methodology_framework overview} presents the three-stage pipeline, which mirrors the methodology of \textcite{mashettyTransferLearningCrossMarket2025a}, and explains how the stages connect and what information flows between them. Subsections \ref{subsec: methodology_stage a}, \ref{subsec: methodology_stage b} and \ref{subsec: methodology_stage c} each explore one of the three stages: source pre-training, domain adaptation as well as fine-tuning and target prediction.
+
+\subsection{Framework Overview} \label{subsec: methodology_framework overview}
+\subsection{Stage A: Source Model Pre-Training} \label{subsec: methodology_stage a}
+\subsubsection{Model Architecture}
+\subsubsection{Training Objective}
+\subsection{Stage B: Domain Adaptation} \label{subsec: methodology_stage b}
+\subsubsection{Motivation for Distribution Alignment}
+\subsubsection{Maximum Mean Discrepancy (MMD)}
+\subsubsection{DANN Variant}
+\subsection{Stage C: Fine-Tuning \& Target Prediction}  \label{subsec: methodology_stage c}
+\subsubsection{Fine-Tuning Strategies}
+\subsubsection{Combined Loss \& Optimisation}
+\subsection{Baseline Models}
+\subsection{Evaluation Metrics}
+\subsection{Hyperparamenter Selection \& Reproducibility}
