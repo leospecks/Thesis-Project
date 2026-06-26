@@ -1,0 +1,189 @@
+% structure.tex
+% Beamer structure file for a thesis / defense presentation.
+% Usage in main.tex:
+%   \documentclass[aspectratio=169]{beamer}
+%   \input{structure.tex}
+%   \title{Your Thesis Title}
+%   \author{Your Name}
+%   \institute{Bocconi University}
+%   \date{Defense Date}
+%   \begin{document} ... \end{document}
+
+% ------------------------------------------------------------
+% Encoding, fonts, and language
+% ------------------------------------------------------------
+\usepackage[english]{babel}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+\fi
+
+% ------------------------------------------------------------
+% Core packages
+% ------------------------------------------------------------
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{appendixnumberbeamer}
+
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc, fit}
+
+% ------------------------------------------------------------
+% Theme and visual identity
+% ------------------------------------------------------------
+\usetheme{Madrid}
+\usecolortheme{default}
+\usefonttheme{professionalfonts}
+
+\definecolor{DefenseBlue}{HTML}{17324D}
+\definecolor{DefenseRed}{HTML}{8C1D40}
+\definecolor{DefenseGray}{HTML}{F3F5F7}
+\definecolor{DefenseDarkGray}{HTML}{4B5563}
+
+\setbeamercolor{palette primary}{bg=DefenseBlue, fg=white}
+\setbeamercolor{palette secondary}{bg=DefenseBlue!85!black, fg=white}
+\setbeamercolor{palette tertiary}{bg=DefenseRed, fg=white}
+\setbeamercolor{frametitle}{bg=DefenseBlue, fg=white}
+\setbeamercolor{title}{fg=DefenseBlue}
+\setbeamercolor{subtitle}{fg=DefenseDarkGray}
+\setbeamercolor{structure}{fg=DefenseBlue}
+\setbeamercolor{block title}{bg=DefenseBlue, fg=white}
+\setbeamercolor{block body}{bg=DefenseGray, fg=black}
+\setbeamercolor{alerted text}{fg=DefenseRed}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{itemize item}{\raise0.15ex\hbox{\scriptsize$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\raise0.15ex\hbox{\tiny$\bullet$}}
+
+% Slide numbers: current / total, excluding appendix by appendixnumberbeamer
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.70\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{author in head/foot}%
+      \insertshortauthor\hspace{1em}\textbar\hspace{1em}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1ex,rightskip=1em plus1fil]{date in head/foot}%
+      \hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+
+% ------------------------------------------------------------
+% Typography and spacing
+% ------------------------------------------------------------
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamersize{text margin left=10mm, text margin right=10mm}
+
+\linespread{1.05}
+\setlength{\parskip}{0.35em}
+
+% ------------------------------------------------------------
+% Handy commands
+% ------------------------------------------------------------
+\newcommand{\backupbegin}{%
+  \newcounter{finalframe}
+  \setcounter{finalframe}{\value{framenumber}}
+}
+
+\newcommand{\backupend}{%
+  \setcounter{framenumber}{\value{finalframe}}
+}
+
+\newcommand{\highlight}[1]{\textcolor{DefenseRed}{\textbf{#1}}}
+\newcommand{\term}[1]{\textcolor{DefenseBlue}{\textbf{#1}}}
+\newcommand{\source}[1]{\vspace{0.2em}{\tiny\color{DefenseDarkGray}Source: #1}}
+\newcommand{\question}[1]{\begin{block}{Question}#1\end{block}}
+\newcommand{\takeaway}[1]{\begin{block}{Key takeaway}#1\end{block}}
+
+% Consistent figure helper: \fullbleedfigure{path}{caption text}
+\newcommand{\fullbleedfigure}[2]{%
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.92\linewidth,height=0.68\textheight,keepaspectratio]{#1}
+    \caption{#2}
+  \end{figure}
+}
+
+% ------------------------------------------------------------
+% Tables and figures
+% ------------------------------------------------------------
+\captionsetup{font=scriptsize, labelfont=bf}
+\graphicspath{{figures/}{images/}{plots/}}
+
+\renewcommand{\arraystretch}{1.15}
+
+% ------------------------------------------------------------
+% Hyperlinks
+% ------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=DefenseBlue,
+  citecolor=DefenseBlue,
+  urlcolor=DefenseRed
+}
+
+% ------------------------------------------------------------
+% Section divider / agenda slides
+% ------------------------------------------------------------
+\AtBeginSection[]{%
+  \begin{frame}{Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+% ------------------------------------------------------------
+% Title slide
+% ------------------------------------------------------------
+\setbeamertemplate{title page}{%
+    \vspace*{0.8cm}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vspace{0.35cm}
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    \vspace{0.9cm}
+    {\large\insertauthor\par}
+    \vspace{0.25cm}
+    {\insertinstitute\par}
+    \vfill
+    {\insertdate\par}
+    \vspace*{0.3cm}
+}
+
+% ------------------------------------------------------------
+% Suggested defense flow, for reference in main.tex
+% ------------------------------------------------------------
+% \begin{frame}
+%   \titlepage
+% \end{frame}
+%
+% \begin{frame}{Roadmap}
+%   \tableofcontents
+% \end{frame}
+%
+% \section{Motivation and Research Question}
+% \section{Literature and Contribution}
+% \section{Data and Methodology}
+% \section{Results}
+% \section{Robustness and Discussion}
+% \section{Conclusion}
+% \appendix
+% \backupbegin
+% \section{Appendix}
+% \backupend

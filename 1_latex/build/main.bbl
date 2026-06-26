@@ -323,6 +323,67 @@
       \endverb
       \keyw{C10,Commodity futures,G10,G17,Momentum,Moving averages,Trend-following rules,Trends}
     \endentry
+    \entry{cerquetiInvestorsAttentionNetwork2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1ccac8e89dbe40690bdbe920980985c0}{%
+           family={Cerqueti},
+           familyi={C\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=158bc90d1b721cbde667b8e3cd245f28}{%
+           family={Ficcadenti},
+           familyi={F\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f322adabfaf256f76dbff8ffbd812b9c}{%
+           family={Mattera},
+           familyi={M\bibinitperiod},
+           given={Raffaele},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{fullhash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{fullhashraw}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{bibnamehash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{authorbibnamehash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{authornamehash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{authorfullhash}{5514a1ceb575b37550c3b6fd3033ca65}
+      \strng{authorfullhashraw}{5514a1ceb575b37550c3b6fd3033ca65}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the role of network spillovers in commodity market forecasting and proposes a novel factor-augmented dynamic network model. We focus on a novel network definition based on investors’ attention to commodities, positing that commodities exhibit spillovers if they share a similar level of interest. To this aim, we employ Google Trends search data as an instrumental measure for attention. The results reveal that including attention-driven spillovers significantly enhances the forecasting accuracy of commodity returns.}
+      \field{day}{1}
+      \field{issn}{0038-0121}
+      \field{journaltitle}{Socio-Economic Planning Sciences}
+      \field{month}{10}
+      \field{shortjournal}{Socio-Economic Planning Sciences}
+      \field{title}{Investors’ Attention and Network Spillover for Commodity Market Forecasting}
+      \field{urlday}{20}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{95}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{102023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.seps.2024.102023
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\RKBYVKXP\S0038012124002222.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0038012124002222
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0038012124002222
+      \endverb
+      \keyw{Commodity returns,Dynamic network model,Factor model,Google Trends,Prediction,Principal components}
+    \endentry
     \entry{giampietroEstimatingStochasticDiscount2018}{article}{}{}
       \name{author}{3}{}{%
         {{hash=0078ab5541f1b18e45041916d385d467}{%
@@ -666,6 +727,69 @@
       \verb https://papers.ssrn.com/abstract=5943491
       \endverb
       \keyw{FIGARCH,FinBERT,Random Forest Model,Return Prediction,Sentiment Analysis}
+    \endentry
+    \entry{ruckerColonyCollapseConsequences2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9329a2fb78715aaeffcef1b2f2e1ede2}{%
+           family={Rucker},
+           familyi={R\bibinitperiod},
+           given={Randal\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=4dfee6be0733262bdc71480a17315054}{%
+           family={Thurman},
+           familyi={T\bibinitperiod},
+           given={Walter\bibnamedelima N.},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ff7a9d700b7b0dcdcaf42fbd1cb2e2a0}{%
+           family={Burgett},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{fullhash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{fullhashraw}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{bibnamehash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{authorbibnamehash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{authornamehash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{authorfullhash}{ee63933992d3e65d1c373bc998b7669d}
+      \strng{authorfullhashraw}{ee63933992d3e65d1c373bc998b7669d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The most extensive markets for pollination services in the world are those for honey bee pollination in the United States. They play important roles in coordinating agricultural producers and migratory beekeepers, who both produce honey and provide pollination for crops. Recent trends in bee disease—including the still poorly understood colony collapse disorder, or CCD—can usefully be viewed in the context of how markets respond to environmental change. We analyze economic indicators of input and output markets related to managed honey bee operations, looking for effects from CCD. We find strong evidence of adaptation in these markets and remarkably little to suggest dramatic and widespread economic effects from CCD.}
+      \field{journaltitle}{Journal of the Association of Environmental and Resource Economists}
+      \field{month}{9}
+      \field{number}{5}
+      \field{shorttitle}{Colony {{Collapse}} and the {{Consequences}} of {{Bee Disease}}}
+      \field{title}{Colony {{Collapse}} and the {{Consequences}} of {{Bee Disease}}: {{Market Adaptation}} to {{Environmental Change}}}
+      \field{urlday}{21}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{927\bibrangedash 960}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1086/704360
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\N5PDH6M4\Rucker et al. - 2019 - Colony Collapse and the Consequences of Bee Disease Market Adaptation to Environmental Change.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.journals.uchicago.edu/doi/abs/10.1086/704360
+      \endverb
+      \verb{url}
+      \verb https://www.journals.uchicago.edu/doi/abs/10.1086/704360
+      \endverb
+      \keyw{colony collapse disorder,honey bees,market adaptation,pollination markets,pollinator health,Q11,Q15,Q54,Q57}
     \endentry
     \entry{tissaouiSentimentMomentumRegimedependent2026}{article}{}{}
       \name{author}{2}{}{%

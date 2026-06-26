@@ -1,0 +1,227 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Loads theme, packages, colors, commands, and slide layout
+\input{structure.tex}
+
+% ------------------------------------------------------------
+% Presentation information
+% ------------------------------------------------------------
+\title[Transfer Learning in Commodity Forecasting]{Transfer Learning in Commodity Forecasting}
+\subtitle{Master Thesis Defense}
+\author[Leo Specks]{Leo Specks}
+\institute{Bocconi University}
+\date{July 2027}
+
+% ------------------------------------------------------------
+% Document
+% ------------------------------------------------------------
+\begin{document}
+
+% Title slide
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Roadmap
+\begin{frame}{Roadmap}
+  \tableofcontents
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Motivation and Research Question}
+% ------------------------------------------------------------
+
+\begin{frame}{Motivation}
+  \begin{itemize}
+    \item Explain the real-world or academic problem.
+    \item Why does this question matter?
+    \item What gap motivates your thesis?
+  \end{itemize}
+
+  \takeaway{Summarize the core motivation in one sentence.}
+\end{frame}
+
+\begin{frame}{Research Question}
+  \question{What is the main research question of your thesis?}
+
+  \begin{itemize}
+    \item Define the key concepts.
+    \item State the expected contribution.
+    \item Briefly preview your approach.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Literature and Contribution}
+% ------------------------------------------------------------
+
+\begin{frame}{Related Literature}
+  \begin{itemize}
+    \item Literature stream 1: key papers and findings.
+    \item Literature stream 2: key papers and findings.
+    \item Literature stream 3: unresolved gap.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction}
+    Biodiversity loss is emerging as a material risk factor for financial markets, alongside the more familiar climate-change channel.
+
+    The paper by Guidolin and Pedio (Review of Finance, 2062) asks a sharp question:
+
+    \question{Do commodity markets price biodiversity-related transition risk? Do commodities with higher biodiversity exposure command a risk premium, and do they react differently to binding policy news?}
+
+    The mechanism operates through two channels.
+  \begin{itemize}
+    \item \textbf{Normal times}: higher biodiversity intensity: greater regulatory and reputational exposure: higher required excess return (risk premium).
+    \item \textbf{Around the Kunming Declaration (Oct 2021)}: the event raises the salience of biodiversity transition risk, triggering a negative price revision for high-intensity commodities — to allow for larger future returns..
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Contribution}
+  \begin{itemize}
+    \item Contribution 1.
+    \item Contribution 2.
+    \item Contribution 3.
+  \end{itemize}
+
+  \takeaway{Your thesis contributes by doing X, using Y, and showing Z.}
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Data and Methodology}
+% ------------------------------------------------------------
+
+\begin{frame}{Data}
+  \begin{itemize}
+    \item Data source: describe where your data comes from.
+    \item Sample period: state the time range.
+    \item Unit of observation: firm, individual, country, transaction, etc.
+    \item Final sample size: number of observations.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Methodology}
+  You can write your main empirical specification here:
+
+  \[
+    Y_{it} = \alpha + \beta X_{it} + \gamma Z_{it} + \mu_i + \lambda_t + \varepsilon_{it}
+  \]
+
+  \begin{itemize}
+    \item $Y_{it}$: outcome variable.
+    \item $X_{it}$: main explanatory variable.
+    \item $Z_{it}$: controls.
+    \item $\mu_i$ and $\lambda_t$: fixed effects.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Results}
+% ------------------------------------------------------------
+
+\begin{frame}{Main Results}
+  \begin{table}
+    \centering
+    \begin{tabular}{lccc}
+      \toprule
+      & Model 1 & Model 2 & Model 3 \\
+      \midrule
+      Main variable & 0.123** & 0.115** & 0.109* \\
+      Controls      & No      & Yes     & Yes    \\
+      Fixed effects & No      & No      & Yes    \\
+      \midrule
+      Observations  & 1,000   & 1,000   & 1,000  \\
+      \bottomrule
+    \end{tabular}
+    \caption{Main regression results}
+  \end{table}
+
+  \source{Author's calculations}
+\end{frame}
+
+\begin{frame}{Interpretation}
+  \begin{itemize}
+    \item Explain the sign of the coefficient.
+    \item Explain the economic magnitude.
+    \item Explain statistical significance.
+    \item Connect the result back to your research question.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Robustness and Discussion}
+% ------------------------------------------------------------
+
+\begin{frame}{Robustness Checks}
+  \begin{itemize}
+    \item Alternative specification.
+    \item Alternative sample.
+    \item Alternative variable definition.
+    \item Placebo or falsification test.
+  \end{itemize}
+
+  \takeaway{The main result remains stable across robustness checks.}
+\end{frame}
+
+\begin{frame}{Limitations}
+  \begin{itemize}
+    \item Limitation 1.
+    \item Limitation 2.
+    \item Limitation 3.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+\section{Conclusion}
+% ------------------------------------------------------------
+
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Restate the research question.
+    \item Summarize the main finding.
+    \item Explain the contribution.
+    \item Mention implications or future research.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Thank You}
+  \centering
+  \Large Thank you.
+
+  \vspace{0.8cm}
+
+  \normalsize Questions?
+\end{frame}
+
+% ------------------------------------------------------------
+% Appendix
+% ------------------------------------------------------------
+
+\appendix
+\backupbegin
+
+\section{Appendix}
+
+\begin{frame}{Additional Results}
+  Put extra tables, figures, or robustness checks here.
+\end{frame}
+
+\begin{frame}{Variable Definitions}
+  \begin{table}
+    \centering
+    \begin{tabular}{ll}
+      \toprule
+      Variable & Definition \\
+      \midrule
+      $Y$ & Outcome variable \\
+      $X$ & Main explanatory variable \\
+      $Z$ & Control variables \\
+      \bottomrule
+    \end{tabular}
+    \caption{Variable definitions}
+  \end{table}
+\end{frame}
+
+\backupend
+
+\end{document}
