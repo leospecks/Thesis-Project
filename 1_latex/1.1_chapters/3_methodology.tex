@@ -4,7 +4,124 @@
 This section will build the transfer learning framework used to test whether forecasting performance can be improved compared to known approaches. Subsection \ref{subsec: methodology_framework overview} presents the three-stage pipeline, which mirrors the methodology of \textcite{mashettyTransferLearningCrossMarket2025a}, and explains how the stages connect and what information flows between them. Subsections \ref{subsec: methodology_stage a}, \ref{subsec: methodology_stage b} and \ref{subsec: methodology_stage c} each explore one of the three stages: source pre-training, domain adaptation as well as fine-tuning and target prediction.
 
 \subsection{Framework Overview} \label{subsec: methodology_framework overview}
+
+\vspace{-10pt}
+\begin{figure}[htbp]
+    \caption{Information flow in the three-stage approach } % source-market data trains a transferable base model; domain adaptation aligns source and target feature distributions; limited target labels fine-tune the adapted model for prediction
+    \begin{tikzpicture}[
+        x=1cm, y=1cm,
+        font=\footnotesize,
+        >={Latex[length=2.0mm,width=1.35mm]},
+        stage/.style={
+            draw=black, thick, rounded corners=2pt,
+            fill=gray!12, text width=33mm,
+            minimum height=13mm, align=center,
+            inner xsep=4pt, inner ysep=5pt
+        },
+        data/.style={
+            draw=black, rounded corners=2pt,
+            fill=white, text width=33mm,
+            minimum height=10mm, align=center,
+            inner xsep=4pt, inner ysep=4pt
+        },
+        obj/.style={
+            draw=black, fill=gray!5,
+            text width=33mm, align=center,
+            inner xsep=4pt, inner ysep=4pt
+        },
+        flow/.style={->, thick},
+        auxflow/.style={->, thick, dashed},
+        lab/.style={midway, above, align=center, font=\scriptsize, fill=white, inner sep=1pt},
+        vlab/.style={midway, right, align=left, font=\scriptsize, fill=white, inner sep=1pt}
+    ]
+
+    % Fixed bounding box: the natural TikZ width is exactly 16 cm.
+    \path[use as bounding box] (-8.0,-4.15) rectangle (8.0,4.15);
+
+    % Aligned column centers
+    \coordinate (c1) at (-6,0.45);
+    \coordinate (c2) at (-2,0.45);
+    \coordinate (c3) at ( 2,0.45);
+    \coordinate (c4) at ( 6,0.45);
+
+    % Stage row
+    \node[stage] (pre) at (c1) {\textbf{1. Source pre-training}\\
+    Developed market model\\[-1mm]
+    $f_S(x;\theta_S)$};
+
+    \node[stage] (adapt) at (c2) {\textbf{2. Domain adaptation}\\
+    Align latent spaces\\[-1mm]
+    $\phi(x_s)\approx\phi(x_t)$};
+
+    \node[stage] (fine) at (c3) {\textbf{3. Fine-tuning}\\
+    Target market\\model\\[-1mm]
+    $f_T(x;\theta_T)$};
+
+    \node[data] (pred) at (c4) {Emerging market\\prediction\\[-1mm]
+    $\hat{y}_t$: return or direction};
+
+    % Data row
+    \node[data] (source) at (-6,3.05) {Source domain $D_S$\\
+    large labelled series\\[-1mm]
+    $(x_s,y_s)$};
+
+    \node[data] (targetu) at (-2,3.05) {Target domain $D_T^u$\\
+    unlabelled feature\\series $x_t$};
+
+    \node[data] (targetl) at (2,3.05) {Target domain $D_T^{\ell}$\\
+    small labelled set\\[-1mm]
+    $(x_t,y_t)$};
+
+    % Objective row
+    \node[obj] (ls) at (-6,-2.25) {$\mathcal{L}_S$\\[-1mm]
+    learn transferable temporal patterns};
+
+    \node[obj] (lda) at (-2,-2.25) {$\mathcal{L}_{DA}$\\[-1mm]
+    match $\phi(x_s)$ and $\phi(x_t)$\\[-1mm]
+    reduce domain shift};
+
+    \node[obj] (lt) at (2,-2.25) {$\mathcal{L}_{T}+\lambda\mathcal{L}_{DA}$\\[-1mm]
+    calibrate with scarce target labels};
+
+    \node[obj] (metrics) at (6,-2.25) {Evaluation\\[-1mm]
+    MAE, RMSE\\directional accuracy};
+
+    % Information flow
+    \draw[flow] (source) -- (pre) node[vlab] {train};
+    \draw[flow] (pre) -- (adapt) ;
+    %\draw[flow] (pre) -- (adapt) node[lab] {$\theta_S$, $\phi(x_s)$};
+    \draw[auxflow] (targetu) -- (adapt) node[vlab] {align};
+    \draw[flow] (adapt) -- (fine);
+    %\draw[flow] (adapt) -- (fine) node[lab] {$\theta_A$};
+    \draw[auxflow] (targetl) -- (fine) node[vlab] {supervise};
+    \draw[flow] (fine) -- (pred);
+    %\draw[flow] (fine) -- (pred) node[lab] {deploy};
+    \draw[flow] (pred) -- (metrics);
+
+    % Objective links
+    \draw[auxflow] (pre) -- (ls);
+    \draw[auxflow] (adapt) -- (lda);
+    \draw[auxflow] (fine) -- (lt);
+
+    % Legend
+    %\node[align=center, font=\scriptsize] at (0,-3.75) {Solid arrows: transferred model knowledge and prediction flow \quad
+    %Dashed arrows: target data and objective constraints};
+
+    \end{tikzpicture}
+
+	\label{framework} % Label for referencing with \ref{...}
+\end{figure}
+\vspace{-20pt}
+
+
 \subsection{Stage A: Source Model Pre-Training} \label{subsec: methodology_stage a}
+Let $P_s(t)$ be the price \yellowmarker{(futures settlement or spot)} of the source commodity at time $t$ and $y_s(t)$ the target as the log-return over horizon $h$ with:
+
+\begin{equation}
+    y_s(t)=\ln \frac{P_s(t+h)}{P_s(t)}.
+\end{equation}
+
+Each input $x_s(t) \in \mathbb R^d$ at time $t$ is a stacked vector of features computed over a lookback window $w$ (so the model actually sees a sequence $\{ x_s(t-w+1),...,x_s(t) \}$ as input).
 \subsubsection{Model Architecture}
 \subsubsection{Training Objective}
 \subsection{Stage B: Domain Adaptation} \label{subsec: methodology_stage b}
