@@ -6,6 +6,52 @@ This section will describe the empirical landscape of commodity markets and avai
 \subsection{Commodity Classification \& Selection} \label{subsec: data_commodity classification and selection}
 \subsection{Source Market: Global Benchmark Exchanges} \label{subsec: data_source market}
 \subsection{Target Markets: Data-Sparse Economies}  \label{subsec: data_target market}
+
+\vspace{-10pt}
+\begin{table}[h!]
+\caption{Possible Target Data Sources/Series}
+\label{tab:target-data-sources}
+\footnotesize
+
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{0.24\textwidth}
+    >{\raggedright\arraybackslash}p{0.08\textwidth}
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}p{0.10\textwidth}
+    @{}
+}
+\toprule
+\textbf{Source} &
+\textbf{Freq.} &
+\textbf{Commodities} &
+\textbf{Dates} \\
+\midrule
+\href{http://www.dce.com.cn/dceg/channel/list/468.html}{DCE (Dalian Commodity Exchange)} &
+Daily &
+No. 1 Soybean, No. 2 Soybean, Soybean Meal, Soybean Oil,
+RBD Palm Olein, Corn, Corn Starch, Pol RG Rice, Egg, Live Hogs,
+Fiberboard, Blockboard, Log, Coking Coal, Coke, Iron Ore,
+LLDPE, LLDPE MAF, PVC, PVC MAF, Polypropylene,
+Polypropylene MAF, Ethylene Glycol, Ethenylbenzene, LPG,
+Benzene &
+2006-2026 \\
+\midrule
+\href{https://english.czce.com.cn/en/MarketData/HistoricalData/H081002017index_1.htm}{Zhengdong Commodity Exchange} &
+Daily &
+Apple, Cotton, Chinese Jujube, Cotton Yarn, Flat Glass, Japonica Rice, Late Rice, Methanol, Rapeseed Oil, Polyester Staple Fiber, Wheat PM, Early Rice, Rapeseed Meal, Rapeseed, Soda Ash, Ferrosilicon, Manganese Silicon, White Sugar, PTA, Urea, Wheat WH, Thermal Coal, Peanut Kernel, Paraxylene, Sodium Hydroxide, Polyethylene Terephthalate Resin for Bottles, Propylene &
+2015-2026 \\
+\midrule
+\href{https://www.mcxindia.com/market-data/historical-data}{Multi Commodity Exchange (MCX) India} &
+Daily &
+Aluminium, Cardamom, Copper, Cotton, Cotton Oil, Crude Oil, ELECDMBL, Gold, Goldguinea, Goldm, Goldpetal, Goldten, Kapas, Lead, Leadmini, MCXBULLDEX, MCXMETLDEX, Metha Oil, Natural Gas Mini, Natural Gas, Nickel, Silver, Silver 100, Silver M, Silver MIC, Steel Rebar, Zinc, Zinc Mini&
+2003-2026 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+
 \subsection{Feature Engineering}    \label{subsec: data_feature engineering}
 \subsection{Descriptive Statistics \& Stylised Facts}   \label{subsec: data_descriptive statistics}
 \subsection{Train/Validation/Test Split}    \label{subsec: data_train validation test split}

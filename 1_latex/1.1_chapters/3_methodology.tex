@@ -4,10 +4,20 @@
 This section will build the transfer learning framework used to test whether forecasting performance can be improved compared to known approaches. Subsection \ref{subsec: methodology_framework overview} presents the three-stage pipeline, which mirrors the methodology of \textcite{mashettyTransferLearningCrossMarket2025a}, and explains how the stages connect and what information flows between them. Subsections \ref{subsec: methodology_stage a}, \ref{subsec: methodology_stage b} and \ref{subsec: methodology_stage c} each explore one of the three stages: source pre-training, domain adaptation as well as fine-tuning and target prediction.
 
 \subsection{Framework Overview} \label{subsec: methodology_framework overview}
+This section introduces the research design aimed at answering the research questions introduced in Section \ref{subsec: research question}. The goal throughout this thesis is to forecast the $h$-period-ahead log return of a commodity traded in a data-scarce target market, 
 
-\vspace{-10pt}
-\begin{figure}[htbp]
-    \caption{Information flow in the three-stage approach } % source-market data trains a transferable base model; domain adaptation aligns source and target feature distributions; limited target labels fine-tune the adapted model for prediction
+\begin{equation}
+    r_{t+h}=\ln P_{t+h}-\ln P_{t}
+\end{equation}
+where $P_t$ denotes the commodity price at time $t$ and $h$ is the forecast horizon. Returns are used as the prediction target rather than price levels because commodity price series are typically non-stationary, whereas returns provide a more suitable basis for forecasting while retaining a clear economic interpretation. The choice of $h$ depends on the length and characteristics of the available target-market sample and is justified in Section \ref{subsec: data_train validation test split}.
+
+For each forecast origin $t$, the models described in the remainder of the chapter generate a forecast $\hat r_{t+h}$ using only information that would have been available at time $t$.
+
+Figure \ref{fig:framework} shows a summary of the framework, including the data sources, the three stages of the pipleine, the resulting comparison ladder and the common evaluation module. Each tier is evaluated using the same target test window, forecast horizon and predictor availability. 
+
+%\vspace{-10pt}
+\begin{figure}[t]
+    \caption{Overview of the source-pre-training, domain-adaptation, fine-tuning pipeline and the resulting five-tier model comparison ladder} 
     \begin{tikzpicture}[
         x=1cm, y=1cm,
         font=\footnotesize,
@@ -109,21 +119,139 @@ This section will build the transfer learning framework used to test whether for
 
     \end{tikzpicture}
 
-	\label{framework} % Label for referencing with \ref{...}
+	\label{fig:framework} % Label for referencing with \ref{...}
 \end{figure}
-\vspace{-20pt}
+%\vspace{-40pt}
 
-
-\subsection{Stage A: Source Model Pre-Training} \label{subsec: methodology_stage a}
-Let $P_s(t)$ be the price \yellowmarker{(futures settlement or spot)} of the source commodity at time $t$ and $y_s(t)$ the target as the log-return over horizon $h$ with:
-
+\subsubsection{Source and target domains}
+The emprical framework seperates the analysis into a source and target-domain. The source-domain contains historical observations from a relatively data-rich, developed commodity market and is represented as
 \begin{equation}
-    y_s(t)=\ln \frac{P_s(t+h)}{P_s(t)}.
+D_S=\left\{\left(x_s^{(i)}, y_s^{(i)}\right)\right\}_{i=1}^n,
 \end{equation}
 
-Each input $x_s(t) \in \mathbb R^d$ at time $t$ is a stacked vector of features computed over a lookback window $w$ (so the model actually sees a sequence $\{ x_s(t-w+1),...,x_s(t) \}$ as input).
-\subsubsection{Model Architecture}
-\subsubsection{Training Objective}
+where $x_s^{(i)}$ denotes the vector of predictors available at the relevant forecast origin and $y_s^{(i)}$ is the corresponding realised return. 
+
+The target domain is defined in the same way but contains a substantially smaller sample from the data-scarce market of interest:
+\begin{equation}
+D_T=\left\{\left(x_t^{(j)}, y_t^{(j)}\right)\right\}_{j=1}^m, \quad m \ll n .
+\end{equation}
+Transfer learning is motivated precisely by the limited amount of target-domain data relative to the larger information set available in the source domain ($m \ll n$). The specific commodities included in the analysis, together with the choice of source and target markets are established in Chapter \ref{sec: data} according to data availability and economic relevance. 
+
+\subsubsection{The comparison ladder} \label{subsubsec: methodology_the comparison ladder}
+The main empirical question is whether models that draw on the source-domain dataset $D_S$ achieve better forecasting performance than otherwise comparable models that rely only on target-domain information, when both are evaluated over the same target sample. To evaluate the this question more granularly the empirical design distinguishes five model tiers according to the information available to each model and the way in which that information is used.
+\begin{itemize}
+    \item \textbf{Tier A: Naive benchmark.} This tier consists of a simple forecasting rule based only on the target series, such as a \orangemarker{zero-return, random-walk or historical-mean forecast}. It contains no parameters estimated from the source-domain and provides a basic benchmark that any learned model should be expected to outperform.
+    \item \textbf{Tier B: Target-only model.} Models on this tier are also trained only on the target-domain dataset $D_T$. However, its functional form should be identical, or as closely comparable as possible, to that of the transfer-learning models. Tier B is supposed to separate the effect of the model architecture from the effect of transfer learning. If a tranfer model performs better that Tier A but not Tier B, the improvement cannot be attributed to the use of source-domain information.
+    \item \textbf{Tier C: Direct transfer.} The source-trained model $f_S(x;\theta_S)$ is applied directly to target-domain observations without any target-specific parameter updating. This provides a measure of how well knowledge learned in the source market transfers to the target market in its original form. It also serves as the reference point for assessing the additional contribution of fine-tuning and domain adaptation in Tiers D and E.
+    \item \textbf{Tier D: Fine-tuned transfer.} The source-trained parameters $\theta_S$ are updated through supervised training on $D_T$, but no separate domain-adaptation mechanism is introduced.
+    \item \textbf{Tier E: Domain-adapted transfer.} The source-trained model undergoes an explicit domain-adaptation step before, or jointly with, supervised fine-tuning on $D_T$.
+\end{itemize}
+
+The resulting tier structure allows the contribution of each component to be examined seperately. Comparisons of Tier D or E with Tier B assess whether the use of source-domain information adds value relative to training on the target-domain alone. The comparison between Tiers D and C isolates the effect of target-domain fine-tuning, while the comparison between Tier E and D captures the additioanl contribution of explicit domain adaptation. These comparisons correspond to the thesis hypotheses and are considered directly in Section \ref{subsubsec: mapping}. Accordingly, the performance of Tier E is not interpreted in isolation as evidence in favour of transfer learning. The lower tiers are reported such that any potential gains can be assessed agains appropriately demanding benchmarks.
+
+As described in Section \ref{subsec: methodology_baseline models}, Tier B is estimated in two forms that differ only in the predictors available to the model. The restricted specification uses the set of features common to both the source and target domains, providing a like-for-like comparison with Tiers C-E. The full specification additionally includes predictors that are available only in the target market. Comparing these two versions helps determine whether differences in forecasting performance arise from transferred information or from the availability of additional local predictors. 
+
+\subsubsection{The three-stage pipeline} \label{subsubsec: methodology_three stage pipeline}
+Tiers C, D and E are constructed using a shared three-stage pipline, drawing on the general source pre-training, domain-adaptation and fine-tuning framework by \textcite{mashettyTransferLearningCrossMarket2025a} for cross-market financial prediction.
+\begin{itemize}
+    \item \textbf{Stage A: Source pre-training.} A model $f_S(x; \theta_S)$ is trained on $D_S$ to minimise a supervised prediction loss, producing pre-trained parameters $\theta_S$ that are intended to capture return-generating patterns that are not specific to source marekt alone (e.g., momentum, mean reversion or responses to common global factors). Applying $f_s(\cdot;\theta_S)$ directly to $D_T$ without further modification yields Tier C.
+    \item \textbf{Stage B: Domain adaptation.} A seperate alignment procedure is introduced to reduce differences between the source and target feature distributions. This addresses the possibility that a model trained solely to minimise prediction error in the source domain may learn representations that do not transfer effectively to the target domain. The precise alignment mechanism, such as a discrepancy-based penalty using \ac{mmd} or an adversarial approach, is specified in Section \ref{subsec: methodology_stage b} after the model class has been established.
+    \item \textbf{Stage C: Fine-tuning.} The pre-trained, and where applicable adapted, model parameters are subsequently updated through supervised training on $D_T$. Fine-tuning the output of Stage A directly produces Tier D, whereas fine-tuning the model after Stage B produces Tier E.
+\end{itemize}
+
+\noindent The framework as it is used in this thesis differs from \textcite{mashettyTransferLearningCrossMarket2025a} in several ways due to its application to commodity rather than equity markets. First, clearly the source and target domains are defined using commodity return series rather than equity-index ones. This distinction is important because commodity-market linkages may operate through mechanisms such as global price discovery, storage and convenience-yield dynamics or commodity-specific supply shocks, which differ from the forces underlying equity-markets comovement. Second, the empirical design considers multiple target markets and, where data availability allows, multiple commodity classes. Third, the contribution of each stage of the pipeline is assessed separately through the explicit ablation structure represented by Tiers C, D and E, rather than evaluating only the fully combined model. These distinctions are examined further in Section \ref{subsubsec: mapping} and Chapter \ref{sec: literature review}. 
+
+
+\subsubsection{Information set and temporal discipline}
+Since the aim of the analysis is to perform a genuine out-of-sample forecast, the same chronological restrictions are applied throughout the pipeline. For any forecast at time $t$, models can only use predictor information available at or before time $t$. Target domain observations occurring after the forecast origin are excluded from all stages of model development and evaluation. 
+
+In Stage A, source-domain pre-training is conducted using only observations available before the beginning of the target evaluation period. This ensures that the pre-trained model is based solely on information that would have been available when the target forecasting started. If an expanding- or rolling-window retraining procedure is used rather than a single fixed pre-training step, the relevant procedure is described in Section \ref{subsec: methodology_stage a}.
+
+Predictor transformations, such as normalisation, scaling, and feature construction, are estimated using the training data only. The fitted transformations are then applied unchanged to the validation and test sets. These chronological and preprocessing rules apply consistently across all stages and tiers, and are therefore stated here rather than repeated in each subsequent section unless a particular stage requires additional clarification.
+
+\subsubsection{Mapping to the research hypotheses} \label{subsubsec: mapping}
+Table \ref{tab:mapping to the research hypotheses} shows how each of the thesis hypotheses corresponds to a specific comparison analyzed in Chapter \ref{sec: results}.
+
+
+\vspace{-10pt}
+\begin{table}[h!]
+\caption{Mapping the comparison ladder to the research hypotheses} 
+\label{tab:mapping to the research hypotheses}
+\footnotesize
+
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{0.34\textwidth}
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}p{0.14\textwidth}
+    @{}
+}
+\toprule
+\textbf{Hypothesis} &
+\textbf{Comparison} &
+\textbf{Evaluated in}  \\
+\midrule
+H1: transfer improves on target-only training &
+Tier D and/or Tier E vs. Tier B (restricted) &
+Sections \ref{subsec: results_main results}, \ref{subsec: results_ablation study} \\
+\midrule
+H2: transfer's advantage is larger when target data are scarcer &
+Gap between the best-performing transfer tier and Tier B, evaluated across shrinking target training histories&
+Section \ref{subsec: results_cross country} \\
+\midrule
+H3: adaptation improves on naive transfer &
+Tier D and/or Tier E vs. Tier C &
+Section \ref{subsec: results_ablation study} \\
+\midrule
+H4: transfer performance depends on source-target similarity &
+Ranking of Tiers C-E under alternative source-market choices, related to ex-ante economic and statistical similarity measures &
+Section \ref{subsec: results_alternative source markets} \\
+
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Stage A: Source Model Pre-Training} \label{subsec: methodology_stage a}
+This section defines Stage A of the pipeline introduced in Section \ref{subsubsec: methodology_three stage pipeline}, in which the source-domain model $f_S(x; \theta_S)$ is estimated using $D_S$. The resulting parameters $\theta_S$ are subsequently carried forward into Tiers C, D and E. Therefore, the modelling decisions made at this stage determine the information and structure available to all three transfer-learning tiers.
+
+\subsubsection{Model class and parameter budget}
+The underlying model $f(\cdot; \theta)$ is specified as a supervised sequence-learning architecture. Two candidate models are used: a \ac{lstm} network and a \ac{tcn}\footnote{\orangemarker{Finalize which models will be used.}}. Both are compatible with the pipeline described in Section \ref{subsubsec: methodology_three stage pipeline} and with the tiered comparison framework introduced in Section \ref{subsubsec: methodology_the comparison ladder}. The final choice between the two architectures or the decision to report results for both as part of the robustness analysis in Section \ref{subsec: results_robustness checks} is made after the source- and target domain sample sizes have been established in Chapter \ref{sec: data}. 
+
+The comparison design imposes an additional constraint on model selection that would not necessarily arise in a conventional pre-training and fine-tuning setting. Tier B, described in Section \ref{subsec: methodology_stage b}, is trained from scratch using only target-domain data and employs the same or a closely comparable model architecture. The underlying model can therefore not be selected solely on the basis of its performance on $D_S$. An architecture that fits the relatively large source-domain sample well but has to many parameters for the smaller target-domain dataset $D_T$ could place Tier B at a structural disadvantage. In that case, superior performance by Tiers D or E might reflect differences in effective model capacity rather than the additional value of information from the transfer. 
+
+For this reason, the size of the architecture is constrained by the amount of data available to the restrictred Tier B specification. Parameters such as hidden-state dimension, network depth and lookback length are chosen such that specification can be estimated without pronounced overfitting. This condition is assessed empirically through learning curves that relate out-of-sample forecasting error to the size of the target--domain training sample for a given level of model capacity, as part of the hyperparameter-selection procedure described in Section \ref{subsec: methodology_hyperparameter selection}. Where this requirement substantially restricts the capacity that could otherwise be achieved in Stage A, the resulting trade-off is reported explicitly. 
+
+
+\subsubsection{Input representation}
+The input to $f_S$ is based exclusively on a shared-core feature set which are consistent with those found in the literature\footnote{\orangemarker{Insert specific citations.}}. This includes own-series technical indicators, such as lagged log returns, rolling realised volatility, moving averages, the relative strength index and Bollinger-band measures, together with global and macro-financial variables that are plausibly relevant across commodity marekts. Examples include a global commodity index or benchmark return, the US dollar index, a global risk-sentiment measure and global short-term interest rates. No target-specific local predictors are included at this stage. As discussed in Section \ref{subsubsec: methodology_what stage a is intended to capture} and formalised in Section \ref{subsec: methodology_baseline models}, such variables are not available in the source domain and therefore cannot be incorporated into a source-trained model that is intended to be applied directly to $D_T$.
+
+Let $x_\tau \in \mathbb R^d$ denote the shared-core feature vector observed at time $\tau$, where the feature dimension $d$ is the same in the source and target domains. Each source-domain training observation is constructed using a lookback window of length $L$.
+
+\begin{equation}
+X_s^{(i)}=\left(x_{i-L+1}, x_{i-L+2}, \ldots, x_i\right), \quad y_s^{(i)}=r_{i+h},
+\end{equation}
+
+The source model therefore maps an $L \times d$ sequence of predictors to a scalar return forecast. The lookback length $L$ is treated as a hyperparameter and is selected using source-domain validation data only, as desribed in Section \ref{subsubsec: methodology_regularisation and validation during pre-training}. Its final value is reported in Section \ref{subsec: methodology_hyperparameter selection} alongside other architectural choices.
+
+Restricting $x_\tau$ to the shared-core feature set ensures that the same input construction can be used for the target-domain observations in Tiers C, D and E. In this way, the predictor representation remains identical across domains, so differences in forecasting performance can be attributed to the modelling stage being evaluated and not to the information supplied to each model. 
+
+\subsubsection{Normalisation protocol}
+\subsubsection{Prediction target and task loss}
+
+\begin{equation}
+\mathcal{L}_S\left(\theta_S\right)=\frac{1}{n} \sum_{i=1}^n\left(f_S\left(X_s^{(i)} ; \theta_S\right)-y_s^{(i)}\right)^2,
+\end{equation}
+
+\subsubsection{Regularisation and validation during pre-training} \label{subsubsec: methodology_regularisation and validation during pre-training}
+\subsubsection{What Stage A is intended to capture} \label{subsubsec: methodology_what stage a is intended to capture}
+The extent to which the pre-trained parameters $\theta_S$ are valuable in the target domain depends on whether they capture relationships that generalise beyond the source market. In this setting, two broad groups of shared inputs are especially relevant, although their potential for transfer is likely to differ.
+
+The first group comprises patterns associated with the underlying return-generating process. These include short-term momentum or mean reversion, volatility clustering and the sensitivity of commodity returns to global risk and financing conditions, such as movements in the \orangemarker{US dollar index, global short-term interest rates and measures of global risk sentiment}. Such relationships are plausible candidates for cross-market transfer because the mechanisms underlying them, including global commodity price discovery, dollar-denominated pricing, and common exposure to global business-cycle conditions, extend beyond any individual source market.
+
+The second group consists of relationships that may arise from features specific to the source market itself. Examples include trading-session effects, liquidity conditions on the source exchange and market responses to source-country economic announcements. These patterns are less likely to generalise to the target domain. Their influence on $\theta_S$ is supposed to be reduced by the domain-adaptation procedure in Stage B as described in Section \ref{subsec: methodology_stage b}. However, this distinction should be interpreted as a working hypotheses about the types of information that source pre-training may capture and not as an empirical finding established in advance. The issue is examined again in Section \ref{subsec: results_cross-commodity variation} through the cross-commodity comparison and in Chapter \ref{sec: discussion} in the discussion of negative transfer. 
+
+
+
 \subsection{Stage B: Domain Adaptation} \label{subsec: methodology_stage b}
 \subsubsection{Motivation for Distribution Alignment}
 \subsubsection{Maximum Mean Discrepancy (MMD)}
@@ -131,6 +259,7 @@ Each input $x_s(t) \in \mathbb R^d$ at time $t$ is a stacked vector of features 
 \subsection{Stage C: Fine-Tuning \& Target Prediction}  \label{subsec: methodology_stage c}
 \subsubsection{Fine-Tuning Strategies}
 \subsubsection{Combined Loss \& Optimisation}
-\subsection{Baseline Models}
+\subsection{Baseline Models} \label{subsec: methodology_baseline models}
 \subsection{Evaluation Metrics}
-\subsection{Hyperparamenter Selection \& Reproducibility}
+\subsection{Hyperparamenter Selection \& Reproducibility} \label{subsec: methodology_hyperparameter selection}
+
