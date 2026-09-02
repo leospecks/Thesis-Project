@@ -1092,6 +1092,214 @@
       \endverb
       \keyw{Accuracy,Adaptation models,Biological system modeling,cross-market prediction,Data models,Deep learning,domain adaptation,emerging markets,financial forecasting,Forecasting,Testing,Time series analysis,time-series analysis,Training data,Transfer learning,volatility modelling}
     \endentry
+    \entry{longLearningTransferableFeatures2015}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=867778fd4a7456937f929a855edfaf77}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Mingsheng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5fde2ec473a5900f24f02ea9a11359ed}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5677a530ed74bcd73cbf45f8088a8418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jianmin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5010abb47d34a51acdafb266a811dc5f}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{afa4e40ee03386597c5d0636e0a899cd}
+      \strng{fullhash}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
+      \strng{fullhashraw}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
+      \strng{bibnamehash}{afa4e40ee03386597c5d0636e0a899cd}
+      \strng{authorbibnamehash}{afa4e40ee03386597c5d0636e0a899cd}
+      \strng{authornamehash}{afa4e40ee03386597c5d0636e0a899cd}
+      \strng{authorfullhash}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
+      \strng{authorfullhashraw}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent studies reveal that a deep neural network can learn transferable features which generalize well to novel tasks for domain adaptation. However, as deep features eventually transition from general to specific along the network, the feature transferability drops significantly in higher layers with increasing domain discrepancy. Hence, it is important to formally reduce the dataset bias and enhance the transferability in task-specific layers. In this paper, we propose a new Deep Adaptation Network (DAN) architecture, which generalizes deep convolutional neural network to the domain adaptation scenario. In DAN, hidden representations of all task-specific layers are embedded in a reproducing kernel Hilbert space where the mean embeddings of different domain distributions can be explicitly matched. The domain discrepancy is further reduced using an optimal multi-kernel selection method for mean embedding matching. DAN can learn transferable features with statistical guarantees, and can scale linearly by unbiased estimate of kernel embedding. Extensive empirical evidence shows that the proposed architecture yields state-of-the-art image classification error rates on standard domain adaptation benchmarks.}
+      \field{booktitle}{Proceedings of the 32nd {{International Conference}} on {{Machine Learning}}}
+      \field{day}{1}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{1938-7228}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Learning {{Transferable Features}} with {{Deep Adaptation Networks}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{97\bibrangedash 105}
+      \range{pages}{9}
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\VYJS2NX2\Long et al. - 2015 - Learning Transferable Features with Deep Adaptation Networks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v37/long15.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v37/long15.html
+      \endverb
+    \endentry
+    \entry{ganinDomainAdversarialTrainingNeural2016}{online}{}{}
+      \name{author}{8}{}{%
+        {{hash=08ddf7ec3c94815436149213b48c1dc1}{%
+           family={Ganin},
+           familyi={G\bibinitperiod},
+           given={Yaroslav},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f0545417d4cb164d2e9ca0befd28033a}{%
+           family={Ustinova},
+           familyi={U\bibinitperiod},
+           given={Evgeniya},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8c48e0ad12ae2a6416cfe169bea601f9}{%
+           family={Ajakan},
+           familyi={A\bibinitperiod},
+           given={Hana},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2b6d90d4e0026111eb2f0688e393bfaf}{%
+           family={Germain},
+           familyi={G\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=42a970b0a0f1ed24b23064370cc9392f}{%
+           family={Larochelle},
+           familyi={L\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9a70c7f25b974869715a0308185b8609}{%
+           family={Laviolette},
+           familyi={L\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f488feb62c48b0b8545f07789ffe13c6}{%
+           family={Marchand},
+           familyi={M\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a48f60762c88685a899455e12615e1df}{%
+           family={Lempitsky},
+           familyi={L\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3fa59e49fbaf11dd1cb506c42df616df}
+      \strng{fullhash}{0bad1d5d762b49d423819ed8ca70bc3c}
+      \strng{fullhashraw}{0bad1d5d762b49d423819ed8ca70bc3c}
+      \strng{bibnamehash}{3fa59e49fbaf11dd1cb506c42df616df}
+      \strng{authorbibnamehash}{3fa59e49fbaf11dd1cb506c42df616df}
+      \strng{authornamehash}{3fa59e49fbaf11dd1cb506c42df616df}
+      \strng{authorfullhash}{0bad1d5d762b49d423819ed8ca70bc3c}
+      \strng{authorfullhashraw}{0bad1d5d762b49d423819ed8ca70bc3c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce a new representation learning approach for domain adaptation, in which data at training and test time come from similar but different distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for effective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains. The approach implements this idea in the context of neural network architectures that are trained on labeled data from the source domain and unlabeled data from the target domain (no labeled target-domain data is necessary). As the training progresses, the approach promotes the emergence of features that are (i) discriminative for the main learning task on the source domain and (ii) indiscriminate with respect to the shift between the domains. We show that this adaptation behaviour can be achieved in almost any feed-forward model by augmenting it with few standard layers and a new gradient reversal layer. The resulting augmented architecture can be trained using standard backpropagation and stochastic gradient descent, and can thus be implemented with little effort using any of the deep learning packages. We demonstrate the success of our approach for two distinct classification problems (document sentiment analysis and image classification), where state-of-the-art domain adaptation performance on standard benchmarks is achieved. We also validate the approach for descriptor learning task in the context of person re-identification application.}
+      \field{day}{26}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{pubstate}{prepublished}
+      \field{title}{Domain-{{Adversarial Training}} of {{Neural Networks}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1505.07818
+      \endverb
+      \verb{eprint}
+      \verb 1505.07818
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\Leo\\Zotero\\storage\\BNGGHG8M\\Ganin et al. - 2016 - Domain-Adversarial Training of Neural Networks.pdf;C\:\\Users\\Leo\\Zotero\\storage\\9QVYBC9B\\1505.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1505.07818
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1505.07818
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
+    \endentry
+    \entry{dieboldComparingPredictiveAccuracy1995}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=2c47ca2ba3f38cb3329258e8242da091}{%
+           family={Mariano},
+           familyi={M\bibinitperiod},
+           given={Roberto\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor \& Francis, Ltd.]}%
+      }
+      \strng{namehash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{fullhash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{fullhashraw}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{bibnamehash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{authorbibnamehash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{authornamehash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{authorfullhash}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \strng{authorfullhashraw}{b22e93c16ed1af110c2b6d60db37bd6c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose and evaluate explicit tests of the null hypothesis of no difference in the accuracy of two competing forecasts. In contrast to previously developed tests, a wide variety of accuracy measures can be used (in particular, the loss function need not be quadratic and need not even be symmetric), and forecast errors can be non-Gaussian, nonzero mean, serially correlated, and contemporaneously correlated. Asymptotic and exact finite-sample tests are proposed, evaluated, and illustrated.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0735-0015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{3}
+      \field{title}{Comparing {{Predictive Accuracy}}}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{253\bibrangedash 263}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.2307/1392185
+      \endverb
+      \verb{eprint}
+      \verb 1392185
+      \endverb
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\RX5I2ZLK\Diebold and Mariano - 1995 - Comparing Predictive Accuracy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1392185
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1392185
+      \endverb
+    \endentry
     \entry{adaninPredictingAgriculturalCommodity2025}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=f0f61b6ad2fdccd7a2dd45c897b59649}{%
@@ -1113,8 +1321,8 @@
       \strng{authornamehash}{d81b635a16a951577792133e71ab1bd9}
       \strng{authorfullhash}{d81b635a16a951577792133e71ab1bd9}
       \strng{authorfullhashraw}{d81b635a16a951577792133e71ab1bd9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{12}
@@ -1161,8 +1369,8 @@
       \strng{authornamehash}{63fd5b9e304333c8347c5598a4ab34f6}
       \strng{authorfullhash}{19f45dc57c2eb1b5ffb34b2d5a207ec8}
       \strng{authorfullhashraw}{19f45dc57c2eb1b5ffb34b2d5a207ec8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1178,8 +1386,8 @@
       \endverb
     \endentry
     \entry{AgriculturalMarketPrice2025}{article}{}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{day}{14}
       \field{journaltitle}{Iconic Research and Engineering Journals}
@@ -1229,8 +1437,8 @@
       \strng{authornamehash}{b6ae8e66338ab44ca7d2cafc1628476f}
       \strng{authorfullhash}{67032cb844e6116480d2f83f39045c46}
       \strng{authorfullhashraw}{67032cb844e6116480d2f83f39045c46}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -1272,8 +1480,8 @@
       \strng{authornamehash}{639341d9fe4001c8070a31f17fb46069}
       \strng{authorfullhash}{639341d9fe4001c8070a31f17fb46069}
       \strng{authorfullhashraw}{639341d9fe4001c8070a31f17fb46069}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{6}
@@ -1314,8 +1522,8 @@
       \strng{authornamehash}{57c18d31744be81e8125f37df674db0e}
       \strng{authorfullhash}{57c18d31744be81e8125f37df674db0e}
       \strng{authorfullhashraw}{57c18d31744be81e8125f37df674db0e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Guided by a macroeconomic model with endogenous commodity prices, we apply a new factor-based identification strategy to decompose the historical sources of changes in commodity prices and global economic activity. The model yields a factor structure for commodity prices and identification conditions that provide an economic interpretation: one factor captures the combined contribution of shocks that affect commodity markets only through general-equilibrium forces. Applied to a cross-section of commodity prices since 1968, the theoretical restrictions are consistent with the data and yield structural interpretations of the common factors in commodity prices. Commodity-related shocks have contributed modestly to global economic fluctuations.}
@@ -1385,8 +1593,8 @@
       \strng{authornamehash}{478972ee82077ac1812b3adbfd370947}
       \strng{authorfullhash}{0a8663539735ad1927768bc5969956ee}
       \strng{authorfullhashraw}{0a8663539735ad1927768bc5969956ee}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -1439,8 +1647,8 @@
       \strng{authornamehash}{7e0eb516746eab4cfc881501d45353a5}
       \strng{authorfullhash}{09d67a9f358d333b647ccd379db406b3}
       \strng{authorfullhashraw}{09d67a9f358d333b647ccd379db406b3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{20}
@@ -1483,8 +1691,8 @@
       \strng{authornamehash}{90a88c12d71ae84c51113650e76f179d}
       \strng{authorfullhash}{90a88c12d71ae84c51113650e76f179d}
       \strng{authorfullhashraw}{90a88c12d71ae84c51113650e76f179d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{2}
@@ -1512,8 +1720,8 @@
       \strng{authornamehash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhash}{263bdf8c038a048ee008ca0d31165c95}
       \strng{authorfullhashraw}{263bdf8c038a048ee008ca0d31165c95}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Various trend-following trading rules have been shown to be valuable for predicting market directions and thus the formulation of investment strategies. However, recent equity market research has provided striking evidence that the predictive power of such rules appears to diminish over time due to increased investor attention and lowered arbitrage barriers. Given that trend-following rules are also very successful and have been widely used in futures markets, we analyze whether a similar effect can be observed for commodity futures contracts. Using a trend regression approach based on time-varying success ratios, we detect significantly higher predictive accuracy for cross-sectional than for time-series strategies. In addition, with the exception of a few commodities, we find no significant trending behavior in trading rule reliability. These results, which are robust in a variety of settings, indicate strong momentum stability in futures markets and justify the application of this class of trading rules in commodity futures investing.}
@@ -1610,8 +1818,8 @@
       \strng{authornamehash}{1e86bce531853fe5bae778e4a98e18f4}
       \strng{authorfullhash}{04249433f571a81cd418f4bb04b53e27}
       \strng{authorfullhashraw}{04249433f571a81cd418f4bb04b53e27}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1660,8 +1868,8 @@
       \strng{authornamehash}{5d9e200c8d3d3f94ac4fc564b2d48175}
       \strng{authorfullhash}{cc77d20f707d48b239b5a0b1e455ad9f}
       \strng{authorfullhashraw}{cc77d20f707d48b239b5a0b1e455ad9f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{12}
@@ -1715,8 +1923,8 @@
       \strng{authornamehash}{fec01ee3e6f89a37403f5534b5c05e22}
       \strng{authorfullhash}{c0ae186b2969ef0de01e2910668984bf}
       \strng{authorfullhashraw}{c0ae186b2969ef0de01e2910668984bf}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{28}
@@ -1755,8 +1963,8 @@
       \strng{authornamehash}{ff5f8e95dee90de018e40902492950b4}
       \strng{authorfullhash}{ff5f8e95dee90de018e40902492950b4}
       \strng{authorfullhashraw}{ff5f8e95dee90de018e40902492950b4}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{2}
@@ -1802,8 +2010,8 @@
       \strng{authornamehash}{9512fa831a95634f2baf5a96989272d9}
       \strng{authorfullhash}{10e9f3705329026457b1a4523691b51a}
       \strng{authorfullhashraw}{10e9f3705329026457b1a4523691b51a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -1839,8 +2047,8 @@
       \strng{authornamehash}{ad44fa12336a975826dde989ac8f96ea}
       \strng{authorfullhash}{ad44fa12336a975826dde989ac8f96ea}
       \strng{authorfullhashraw}{ad44fa12336a975826dde989ac8f96ea}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1884,8 +2092,8 @@
       \strng{authornamehash}{ad3103ad2d20ec7b9bfa822be3c023ce}
       \strng{authorfullhash}{ad3103ad2d20ec7b9bfa822be3c023ce}
       \strng{authorfullhashraw}{ad3103ad2d20ec7b9bfa822be3c023ce}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This paper extends the topical literature on the co-movement and determinants of primary commodity prices, by considering heterogeneity in commodities and time variation in the impact of fundamentals. We account for heterogeneity by employing a dynamic hierarchical factor model, which decomposes commodities into global and sectoral factors. Using a time-varying parameter factor augmented VAR model, we shock global and sector-specific factors over time. We present plausible impulse responses to demand shocks, real interest rate shocks and to elevated risks during the global financial crisis. We also identify that agricultural raw materials, food and metals respond heterogeneously to these shocks.}
@@ -1936,8 +2144,8 @@
       \strng{authornamehash}{56ff71a4c3ac95917f277ae3353e033b}
       \strng{authorfullhash}{56ff71a4c3ac95917f277ae3353e033b}
       \strng{authorfullhashraw}{56ff71a4c3ac95917f277ae3353e033b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1978,8 +2186,8 @@
       \strng{authornamehash}{5514a1ceb575b37550c3b6fd3033ca65}
       \strng{authorfullhash}{5514a1ceb575b37550c3b6fd3033ca65}
       \strng{authorfullhashraw}{5514a1ceb575b37550c3b6fd3033ca65}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper explores the role of network spillovers in commodity market forecasting and proposes a novel factor-augmented dynamic network model. We focus on a novel network definition based on investors’ attention to commodities, positing that commodities exhibit spillovers if they share a similar level of interest. To this aim, we employ Google Trends search data as an instrumental measure for attention. The results reveal that including attention-driven spillovers significantly enhances the forecasting accuracy of commodity returns.}
@@ -2034,8 +2242,8 @@
       \strng{authornamehash}{3b6383eea3ce2d85c9ce80ca38620d21}
       \strng{authorfullhash}{3b6383eea3ce2d85c9ce80ca38620d21}
       \strng{authorfullhashraw}{3b6383eea3ce2d85c9ce80ca38620d21}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -2076,8 +2284,8 @@
       \strng{authornamehash}{0a03c2a6cf43ebaaecbb4ee95719977d}
       \strng{authorfullhash}{0a03c2a6cf43ebaaecbb4ee95719977d}
       \strng{authorfullhashraw}{0a03c2a6cf43ebaaecbb4ee95719977d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{21}
@@ -2134,8 +2342,8 @@
       \strng{authornamehash}{19914797ccd49350761732371f1e19e4}
       \strng{authorfullhash}{0ec796aa252849f2a9ea9e2b8633b80d}
       \strng{authorfullhashraw}{0ec796aa252849f2a9ea9e2b8633b80d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{24}
@@ -2167,8 +2375,8 @@
       \strng{authornamehash}{a732a30090abffb2c5be7c9177840efe}
       \strng{authorfullhash}{a732a30090abffb2c5be7c9177840efe}
       \strng{authorfullhashraw}{a732a30090abffb2c5be7c9177840efe}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -2205,8 +2413,8 @@
       \strng{authornamehash}{072570e98a288d904bee800676ae62e2}
       \strng{authorfullhash}{072570e98a288d904bee800676ae62e2}
       \strng{authorfullhashraw}{072570e98a288d904bee800676ae62e2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{20}
@@ -2243,8 +2451,8 @@
       \strng{authornamehash}{03353fa9572dfbbde7200827ea8869b9}
       \strng{authorfullhash}{03353fa9572dfbbde7200827ea8869b9}
       \strng{authorfullhashraw}{03353fa9572dfbbde7200827ea8869b9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -2286,8 +2494,8 @@
       \strng{authornamehash}{f18649b0f8fa5e0c140ba9a5c94d9fc8}
       \strng{authorfullhash}{f18649b0f8fa5e0c140ba9a5c94d9fc8}
       \strng{authorfullhashraw}{f18649b0f8fa5e0c140ba9a5c94d9fc8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{20}
@@ -2333,8 +2541,8 @@
       \strng{authornamehash}{3df7c445a60399cd5fc7c1e9a7f74876}
       \strng{authorfullhash}{0266c3962d184559ed28d5f11126e20f}
       \strng{authorfullhashraw}{0266c3962d184559ed28d5f11126e20f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -2375,8 +2583,8 @@
       \strng{authornamehash}{4d6513f85b73b7fc86c03e77f25fca11}
       \strng{authorfullhash}{4d6513f85b73b7fc86c03e77f25fca11}
       \strng{authorfullhashraw}{4d6513f85b73b7fc86c03e77f25fca11}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{8}
@@ -2412,8 +2620,8 @@
       \strng{authornamehash}{96d6d7140300ac687ecb06c933d132d5}
       \strng{authorfullhash}{96d6d7140300ac687ecb06c933d132d5}
       \strng{authorfullhashraw}{96d6d7140300ac687ecb06c933d132d5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
@@ -2464,8 +2672,8 @@
       \strng{authornamehash}{bd29e7d5189d69882ba10abe057f83a1}
       \strng{authorfullhash}{57abf5f3e0ddca94dd9ae086778b9ea8}
       \strng{authorfullhashraw}{57abf5f3e0ddca94dd9ae086778b9ea8}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{30}
@@ -2479,92 +2687,6 @@
       \verb{doi}
       \verb 10.22266/ijies2022.0430.42
       \endverb
-    \endentry
-    \entry{ganinDomainAdversarialTrainingNeural2016}{online}{}{}
-      \name{author}{8}{}{%
-        {{hash=08ddf7ec3c94815436149213b48c1dc1}{%
-           family={Ganin},
-           familyi={G\bibinitperiod},
-           given={Yaroslav},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=f0545417d4cb164d2e9ca0befd28033a}{%
-           family={Ustinova},
-           familyi={U\bibinitperiod},
-           given={Evgeniya},
-           giveni={E\bibinitperiod}}}%
-        {{hash=8c48e0ad12ae2a6416cfe169bea601f9}{%
-           family={Ajakan},
-           familyi={A\bibinitperiod},
-           given={Hana},
-           giveni={H\bibinitperiod}}}%
-        {{hash=2b6d90d4e0026111eb2f0688e393bfaf}{%
-           family={Germain},
-           familyi={G\bibinitperiod},
-           given={Pascal},
-           giveni={P\bibinitperiod}}}%
-        {{hash=42a970b0a0f1ed24b23064370cc9392f}{%
-           family={Larochelle},
-           familyi={L\bibinitperiod},
-           given={Hugo},
-           giveni={H\bibinitperiod}}}%
-        {{hash=9a70c7f25b974869715a0308185b8609}{%
-           family={Laviolette},
-           familyi={L\bibinitperiod},
-           given={François},
-           giveni={F\bibinitperiod}}}%
-        {{hash=f488feb62c48b0b8545f07789ffe13c6}{%
-           family={Marchand},
-           familyi={M\bibinitperiod},
-           given={Mario},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a48f60762c88685a899455e12615e1df}{%
-           family={Lempitsky},
-           familyi={L\bibinitperiod},
-           given={Victor},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{3fa59e49fbaf11dd1cb506c42df616df}
-      \strng{fullhash}{0bad1d5d762b49d423819ed8ca70bc3c}
-      \strng{fullhashraw}{0bad1d5d762b49d423819ed8ca70bc3c}
-      \strng{bibnamehash}{3fa59e49fbaf11dd1cb506c42df616df}
-      \strng{authorbibnamehash}{3fa59e49fbaf11dd1cb506c42df616df}
-      \strng{authornamehash}{3fa59e49fbaf11dd1cb506c42df616df}
-      \strng{authorfullhash}{0bad1d5d762b49d423819ed8ca70bc3c}
-      \strng{authorfullhashraw}{0bad1d5d762b49d423819ed8ca70bc3c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We introduce a new representation learning approach for domain adaptation, in which data at training and test time come from similar but different distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for effective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains. The approach implements this idea in the context of neural network architectures that are trained on labeled data from the source domain and unlabeled data from the target domain (no labeled target-domain data is necessary). As the training progresses, the approach promotes the emergence of features that are (i) discriminative for the main learning task on the source domain and (ii) indiscriminate with respect to the shift between the domains. We show that this adaptation behaviour can be achieved in almost any feed-forward model by augmenting it with few standard layers and a new gradient reversal layer. The resulting augmented architecture can be trained using standard backpropagation and stochastic gradient descent, and can thus be implemented with little effort using any of the deep learning packages. We demonstrate the success of our approach for two distinct classification problems (document sentiment analysis and image classification), where state-of-the-art domain adaptation performance on standard benchmarks is achieved. We also validate the approach for descriptor learning task in the context of person re-identification application.}
-      \field{day}{26}
-      \field{eprintclass}{stat.ML}
-      \field{eprinttype}{arXiv}
-      \field{month}{5}
-      \field{pubstate}{prepublished}
-      \field{title}{Domain-{{Adversarial Training}} of {{Neural Networks}}}
-      \field{urlday}{11}
-      \field{urlmonth}{8}
-      \field{urlyear}{2026}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{doi}
-      \verb 10.48550/arXiv.1505.07818
-      \endverb
-      \verb{eprint}
-      \verb 1505.07818
-      \endverb
-      \verb{file}
-      \verb C\:\\Users\\Leo\\Zotero\\storage\\BNGGHG8M\\Ganin et al. - 2016 - Domain-Adversarial Training of Neural Networks.pdf;C\:\\Users\\Leo\\Zotero\\storage\\9QVYBC9B\\1505.html
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1505.07818
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1505.07818
-      \endverb
-      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
     \endentry
     \entry{ghoddusiMachineLearningEnergy2019}{article}{}{}
       \name{author}{3}{}{%
@@ -2592,8 +2714,8 @@
       \strng{authornamehash}{ac765db2ff0047a9169d9c63346735bc}
       \strng{authorfullhash}{ac765db2ff0047a9169d9c63346735bc}
       \strng{authorfullhashraw}{ac765db2ff0047a9169d9c63346735bc}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -2634,8 +2756,8 @@
       \strng{authornamehash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{authorfullhash}{0ad825c8ed2472d36b7a196ad452db9c}
       \strng{authorfullhashraw}{0ad825c8ed2472d36b7a196ad452db9c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We develop new likelihood-based methods to estimate factor-based Stochastic Discount Factors (SDF) that may accommodate Hidden Markov dynamics in the factor loadings. We use these methods to investigate whether it is possible to find a SDF that jointly prices the cross-section of eight U.S. portfolios of stocks, Treasuries, corporate bonds, and commodities. In particular, we test a range of possible different specification of the SDF, including single-state and Hidden Markov models and compare their statistical and pricing performances. In addition, we assess whether and to which extent a selection of these models replicates the observed moments of the return series, and especially correlations. We report that regime-switching models clearly outperform single-state ones both in term of statistical and pricing accuracy. However, while a four-state model is selected by the information criteria, a two-state three-factor full Vector Autoregression model outperforms the others as far as the pricing accuracy is concerned.}
@@ -2692,8 +2814,8 @@
       \strng{authornamehash}{449c998f22910fa8e597852d00854f9b}
       \strng{authorfullhash}{449c998f22910fa8e597852d00854f9b}
       \strng{authorfullhashraw}{449c998f22910fa8e597852d00854f9b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -2744,8 +2866,8 @@
       \strng{authornamehash}{36a0d23cacb9f65c13ab75b8b615bb04}
       \strng{authorfullhash}{32663e70e64be00d3740e6bccd9c56a7}
       \strng{authorfullhashraw}{32663e70e64be00d3740e6bccd9c56a7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -2816,8 +2938,8 @@
       \strng{authornamehash}{364baf6b9ba69e836f343b96fe321418}
       \strng{authorfullhash}{3e79c3eb5d87b1714d609e3a999fb79b}
       \strng{authorfullhashraw}{3e79c3eb5d87b1714d609e3a999fb79b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -2859,8 +2981,8 @@
       \strng{authornamehash}{cb0782dae50c895e32a8c280f3a22971}
       \strng{authorfullhash}{cb0782dae50c895e32a8c280f3a22971}
       \strng{authorfullhashraw}{cb0782dae50c895e32a8c280f3a22971}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{27}
@@ -2904,8 +3026,8 @@
       \strng{authornamehash}{406f3bc5fff5d958daa468b6e1587c59}
       \strng{authorfullhash}{406f3bc5fff5d958daa468b6e1587c59}
       \strng{authorfullhashraw}{406f3bc5fff5d958daa468b6e1587c59}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{16}
@@ -2942,8 +3064,8 @@
       \strng{authornamehash}{955b436a18090e65edfe63e8236f725c}
       \strng{authorfullhash}{955b436a18090e65edfe63e8236f725c}
       \strng{authorfullhashraw}{955b436a18090e65edfe63e8236f725c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Focusing on clean energy stocks and oil prices, we find that connectedness between these assets not only exists in volatility, but also at higher-order moments, such as skewness and kurtosis, which have been largely under studied in the existing literature. Estimating the connectedness using intra-day data, our initial static analyses suggest that the connectedness between the clean energy and oil markets is heterogenous across the moments and the shock transmitter/recipient role played by each market varies across moments. Further dynamic analyses indicate that higher-order moment connectedness is also time varying and appears to be stronger during uncertain market conditions. In addition, we identify day-of-the-week patterns of higher-order moment connectedness during high uncertainty periods, but these patterns appear to be reversed during low uncertainty periods. The employment of Markov switching regression models further corroborates the market uncertainties as the determinants of higher-order moment connectedness. As an important extension, we provide empirical evidence that including clean energy stocks in the investment portfolio can effectively hedge oil price risks and considering higher-order moments in constructing investment strategies adds extra value to investors. Our utility-based hedging strategy and minimum connectedness portfolio can offer higher utility gains and better risk-return trade-offs to those investors who are not infinitely risk-averse.}
@@ -3003,8 +3125,8 @@
       \strng{authornamehash}{09bff6f2ab7791489278925176273a9d}
       \strng{authorfullhash}{09bff6f2ab7791489278925176273a9d}
       \strng{authorfullhashraw}{09bff6f2ab7791489278925176273a9d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -3060,8 +3182,8 @@
       \strng{authornamehash}{1ec0eba03e90959ff3457a51ca451d34}
       \strng{authorfullhash}{7d914ca708e84b44a011bf9969ebd8f5}
       \strng{authorfullhashraw}{7d914ca708e84b44a011bf9969ebd8f5}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -3117,8 +3239,8 @@
       \strng{authornamehash}{341bf1c197dc4bf98665b86fffb0704c}
       \strng{authorfullhash}{697cda02f48bdf6b0008ef75bfe2ae4c}
       \strng{authorfullhashraw}{697cda02f48bdf6b0008ef75bfe2ae4c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Access}
@@ -3156,8 +3278,8 @@
       \strng{authorfullhash}{2a83508fc199e6b2791db2d411d294df}
       \strng{authorfullhashraw}{2a83508fc199e6b2791db2d411d294df}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{21}
@@ -3194,8 +3316,8 @@
       \strng{authorfullhash}{2a83508fc199e6b2791db2d411d294df}
       \strng{authorfullhashraw}{2a83508fc199e6b2791db2d411d294df}
       \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{10}
@@ -3236,8 +3358,8 @@
       \strng{authornamehash}{9e75d5d2cbd3bb6b4ab2dba89d1746da}
       \strng{authorfullhash}{9e75d5d2cbd3bb6b4ab2dba89d1746da}
       \strng{authorfullhashraw}{9e75d5d2cbd3bb6b4ab2dba89d1746da}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{16}
@@ -3274,8 +3396,8 @@
       \strng{authorfullhash}{2a83508fc199e6b2791db2d411d294df}
       \strng{authorfullhashraw}{2a83508fc199e6b2791db2d411d294df}
       \field{extraname}{4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -3306,8 +3428,8 @@
       \strng{authornamehash}{890e19fceb59693f31f7157810a88871}
       \strng{authorfullhash}{890e19fceb59693f31f7157810a88871}
       \strng{authorfullhashraw}{890e19fceb59693f31f7157810a88871}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{31}
@@ -3348,8 +3470,8 @@
       \strng{authornamehash}{ee26a17f4ac7f67a88d1ac5ff30bf11d}
       \strng{authorfullhash}{ee26a17f4ac7f67a88d1ac5ff30bf11d}
       \strng{authorfullhashraw}{ee26a17f4ac7f67a88d1ac5ff30bf11d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -3380,8 +3502,8 @@
       \strng{authornamehash}{738d2de76ca30ced029f8d480f0d26bc}
       \strng{authorfullhash}{738d2de76ca30ced029f8d480f0d26bc}
       \strng{authorfullhashraw}{738d2de76ca30ced029f8d480f0d26bc}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -3395,6 +3517,56 @@
       \verb{doi}
       \verb 10.67228/3071642x/ijcfde-2024pii7k1d
       \endverb
+    \endentry
+    \entry{kaurPredictiveAnalyticsModels2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e2ca7fe8f0babf8ac29d3ff920a7a909}{%
+           family={Kaur},
+           familyi={K\bibinitperiod},
+           given={Baljinder},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{fullhash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{fullhashraw}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{bibnamehash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{authorbibnamehash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{authornamehash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{authorfullhash}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \strng{authorfullhashraw}{e2ca7fe8f0babf8ac29d3ff920a7a909}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This research presents a literature review on the application of Artificial Intelligence (AI) and Machine Learning (ML) techniques in predictive analytics, with a main emphasis on the commodity market. Predictive analytics influences statistical models and Machine Learning approaches to analyze periodic data and predict future outcomes, providing substantial value across various domains such as finance, healthcare, retail, marketing, and commodities. The motive of this review is two-fold: (1) to survey AI-ML based approaches, techniques, and tools employed in predictive analytics, and (2) to inspect predictive analytics models precisely designed for the commodity market. The review integrates current methodologies, strategies, algorithms, and tools, while also surveying the types of commodities analyzed and their interdependencies. The major influence of this research lies in recognizing major gaps in existing studies, predominantly in model generalization, integration of heterogeneous data sources, and evaluation of real-world applicability. These gaps emphasize possibilities for future research and provide direction for developing more robust, accurate, and scalable predictive analytics frameworks. DOI: https://doi.org/10.17762/ijisae.v12i3.7958}
+      \field{day}{30}
+      \field{issn}{2147-6799}
+      \field{journaltitle}{International Journal of Intelligent Systems and Applications in Engineering}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shorttitle}{Predictive {{Analytics Models}} for {{Commodity Market}}}
+      \field{title}{Predictive {{Analytics Models}} for {{Commodity Market}}: {{A Literature Review}}}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{4525\bibrangedash 4535}
+      \range{pages}{11}
+      \verb{file}
+      \verb C:\Users\Leo\Zotero\storage\2ZKI7ZCT\Kaur - 2024 - Predictive Analytics Models for Commodity Market A Literature Review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ijisae.org/index.php/IJISAE/article/view/7958
+      \endverb
+      \verb{url}
+      \verb https://ijisae.org/index.php/IJISAE/article/view/7958
+      \endverb
+      \keyw{Artificial Intelligence,Forecasting,Machine Learning,Predictive Analytics}
     \endentry
     \entry{kimForecastingOilFutures2024}{article}{}{}
       \name{author}{3}{}{%
@@ -3422,8 +3594,8 @@
       \strng{authornamehash}{28eb8684fad9c4bb139e205969477a36}
       \strng{authorfullhash}{28eb8684fad9c4bb139e205969477a36}
       \strng{authorfullhashraw}{28eb8684fad9c4bb139e205969477a36}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{24}
@@ -3472,8 +3644,8 @@
       \strng{authornamehash}{c58ac6ede46b6c16cfb63d4580dd03d0}
       \strng{authorfullhash}{c0b43f184aefc45128c3350e98d0804c}
       \strng{authorfullhashraw}{c0b43f184aefc45128c3350e98d0804c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -3530,8 +3702,8 @@
       \strng{authornamehash}{cb12c0bca84acf0afd08c639e8efcdb8}
       \strng{authorfullhash}{ba58be10880efed77b10af417dd19625}
       \strng{authorfullhashraw}{ba58be10880efed77b10af417dd19625}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -3791,71 +3963,6 @@
       \true{nocite}
       \verb{doi}
       \verb 10.1016/j.ijforecast.2018.07.006
-      \endverb
-    \endentry
-    \entry{longLearningTransferableFeatures2015}{inproceedings}{}{}
-      \name{author}{4}{}{%
-        {{hash=867778fd4a7456937f929a855edfaf77}{%
-           family={Long},
-           familyi={L\bibinitperiod},
-           given={Mingsheng},
-           giveni={M\bibinitperiod}}}%
-        {{hash=5fde2ec473a5900f24f02ea9a11359ed}{%
-           family={Cao},
-           familyi={C\bibinitperiod},
-           given={Yue},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=5677a530ed74bcd73cbf45f8088a8418}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Jianmin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5010abb47d34a51acdafb266a811dc5f}{%
-           family={Jordan},
-           familyi={J\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {PMLR}%
-      }
-      \strng{namehash}{afa4e40ee03386597c5d0636e0a899cd}
-      \strng{fullhash}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
-      \strng{fullhashraw}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
-      \strng{bibnamehash}{afa4e40ee03386597c5d0636e0a899cd}
-      \strng{authorbibnamehash}{afa4e40ee03386597c5d0636e0a899cd}
-      \strng{authornamehash}{afa4e40ee03386597c5d0636e0a899cd}
-      \strng{authorfullhash}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
-      \strng{authorfullhashraw}{9b90e70c3df79fe2f9b22b4f44c8e5ff}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Recent studies reveal that a deep neural network can learn transferable features which generalize well to novel tasks for domain adaptation. However, as deep features eventually transition from general to specific along the network, the feature transferability drops significantly in higher layers with increasing domain discrepancy. Hence, it is important to formally reduce the dataset bias and enhance the transferability in task-specific layers. In this paper, we propose a new Deep Adaptation Network (DAN) architecture, which generalizes deep convolutional neural network to the domain adaptation scenario. In DAN, hidden representations of all task-specific layers are embedded in a reproducing kernel Hilbert space where the mean embeddings of different domain distributions can be explicitly matched. The domain discrepancy is further reduced using an optimal multi-kernel selection method for mean embedding matching. DAN can learn transferable features with statistical guarantees, and can scale linearly by unbiased estimate of kernel embedding. Extensive empirical evidence shows that the proposed architecture yields state-of-the-art image classification error rates on standard domain adaptation benchmarks.}
-      \field{booktitle}{Proceedings of the 32nd {{International Conference}} on {{Machine Learning}}}
-      \field{day}{1}
-      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
-      \field{issn}{1938-7228}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{title}{Learning {{Transferable Features}} with {{Deep Adaptation Networks}}}
-      \field{urlday}{11}
-      \field{urlmonth}{8}
-      \field{urlyear}{2026}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{97\bibrangedash 105}
-      \range{pages}{9}
-      \verb{file}
-      \verb C:\Users\Leo\Zotero\storage\VYJS2NX2\Long et al. - 2015 - Learning Transferable Features with Deep Adaptation Networks.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://proceedings.mlr.press/v37/long15.html
-      \endverb
-      \verb{url}
-      \verb https://proceedings.mlr.press/v37/long15.html
       \endverb
     \endentry
     \entry{lucasPriceForecastingBalancing2020}{article}{}{}
@@ -4699,22 +4806,6 @@
       \true{nocite}
       \verb{doi}
       \verb 10.1371/journal.pone.0270553
-      \endverb
-    \endentry
-    \entry{PredictiveAnalyticsModels2024}{article}{}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{journaltitle}{International Journal of Intelligent Systems and Applications in Engineering}
-      \field{month}{1}
-      \field{shortjournal}{International Journal of Intelligent Systems and Applications in Engineering}
-      \field{title}{Predictive {{Analytics Models}} for {{Commodity Market}}: {{A Literature Review}}}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \true{nocite}
-      \verb{doi}
-      \verb 10.17762/ijisae.v12i3.7958
       \endverb
     \endentry
     \entry{raghuUnlockingFutureCommodities2024}{article}{}{}
