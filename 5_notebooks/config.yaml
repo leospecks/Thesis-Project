@@ -1,0 +1,73 @@
+# =============================================================================
+# Master configuration — single source of truth for placeholders/decisions
+# referenced throughout the notebook pipeline (Chapter 4 methodology).
+#
+# Every notebook should read values from here rather than hardcoding them, so
+# that finalizing a choice (e.g. once Chapter 3's data availability is known)
+# means editing this one file, not every notebook.
+#
+# Fields left as `null` are open placeholders per the decision log
+# (drafts/decision_log.md, "Status note" and chapter4_methodology.md's
+# editorial notes) as of 2026-09-08. Fill them in as decisions are made, and
+# log the decision in decision_log.md when you do.
+# =============================================================================
+
+domains:
+  source:
+    country: null          # e.g. "United States" — TODO: confirm against Ch.3
+    market: null            # exchange / venue, e.g. "CME"
+    commodity: null         # must match target's commodity definition
+    currency: null
+  target:
+    country: null           # TODO: confirm developing-market target country
+    market: null
+    commodity: null
+    currency: null
+
+frequency: null              # e.g. "daily" — TODO
+
+forecast_horizon_h: null     # TODO: justify from Section 3.6 sample sizes
+
+# Candidate date ranges — fill in once providers are chosen. Source range must
+# extend well before target_eval_window_start (see below), per Section 4.1.4.
+date_ranges:
+  source_start: null
+  source_end: null
+  target_start: null
+  target_end: null
+
+# The date at which the target evaluation (test) window begins. Everything
+# upstream of this date is fair game for training/validation/EDA-for-design-
+# decisions; nothing at or after it may influence any modeling choice.
+target_eval_window_start: null
+
+data_sources:
+  # Record provider + access method per series once chosen, e.g.:
+  # target_price: {provider: "Yahoo Finance", ticker: null, endpoint: null}
+  target_price: {provider: null, ticker: null, endpoint: null}
+  source_price: {provider: null, ticker: null, endpoint: null}
+  global_commodity_index: {provider: null, ticker: null, endpoint: null}
+  usd_index: {provider: null, ticker: null, endpoint: null}
+  global_risk_proxy: {provider: null, ticker: null, endpoint: null}   # e.g. VIX
+  global_short_rate: {provider: null, ticker: null, endpoint: null}
+  local_fx: {provider: null, ticker: null, endpoint: null}
+  local_inflation: {provider: null, ticker: null, endpoint: null}
+  local_policy_rate: {provider: null, ticker: null, endpoint: null}
+  local_country_risk: {provider: null, ticker: null, endpoint: null}
+  local_supply_trade: {provider: null, ticker: null, endpoint: null}
+
+# Decisions this notebook (00) is responsible for resolving empirically.
+# Leave null until the corresponding EDA section has produced an answer.
+resolved_by_notebook_00:
+  scaler_type: null                # "robust" | "standard" — Section 4.2.3
+  calendar_alignment_rule: null    # e.g. "align on target trading days"
+  futures_roll_convention: null    # if using futures prices at all
+  local_variable_publication_lags_days: {}   # e.g. {local_inflation: 30}
+  candidate_garch_orders: null
+
+paths:
+  raw_dir: "data/raw"
+  interim_dir: "data/interim"
+  manifest_path: "data/manifest.json"
+
+seed: 42
